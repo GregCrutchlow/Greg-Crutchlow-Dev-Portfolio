@@ -1,0 +1,27 @@
+@use "./variables" as *;
+
+
+
+.navBar {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    .wrapper {
+        display: flex;
+        justify-content: space-between;
+        .logoContainer {
+            padding-top: 0.5rem;
+            img {
+                width: 2rem;
+                vertical-align: middle;
+            }
+        }
+        .navLinks {
+            display: flex;
+            li {
+                margin-left: 2rem;
+            }
+        }
+    }
+}
