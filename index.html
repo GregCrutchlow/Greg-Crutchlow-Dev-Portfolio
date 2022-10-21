@@ -7,49 +7,102 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./assets/GregDev Logo White.png" type="image/x-icon">
     <title>Greg Crutchlow Developer</title>
+
+    <!-- Style Sheet import -->
+    <link rel="stylesheet" href="./styles/style.css">
+
+    <!-- Google Fonts import-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@400;700&family=PT+Sans+Caption:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Fontawesome import -->
+    <script src="https://kit.fontawesome.com/d718794c03.js" crossorigin="anonymous"></script>
+
+    <!-- AOS scroll library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
-    <header>
+    <!-- Skip Link-->
+    <a id='skipNav' class='screenreaderText' href='#mainContent'>
+        Skip Navigation or Skip to Content
+    </a>
+
+    <!-- Nav Bar Section -->
+    <nav class="navBar">
         <div class="wrapper">
+            <div class="logoContainer">
+                <a href="#"><img src="./assets/GregDev Logo White.png" alt="Greg Crutchlow's Dev Logo"></a>
+            </div>
+            <!-- Nav Links - Mobile and Full Page -->
             <nav>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Tech Stack</a></li>
-                    <li><a href="#">Projects</a></li>
-                    <li><a href="#">Testimonials</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
+                <div class="mobileMenu">
+                    <span class="topBar"></span>
+                    <span class="middleBar"></span>
+                    <span class="bottomBar"></span>
+                </div>
+                    <ul class="navLinks" id="navLinks">
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#skills">Tech Stack</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
             </nav>
-
         </div> <!-- wrapper end -->
-    </header>
-    <main>
-        <div class="wrapper">
-            <Section> <!-- About Section -->
-
-            </Section> <!-- End About Section -->
-            <Section> <!-- Tech Stack Section -->
-
-            </Section> <!-- End Tech Stack -->
-            <Section> <!-- Projects Section -->
-
-            </Section> <!-- End Projects Section -->
-            <Section> <!-- TO BE DETERMINED Section-->
-
-            </Section> <!-- End TO BE DETERMINED Section-->
-            <Section> <!-- Contact Section -->
-
-            </Section> <!-- End Contact Section -->
-
+    </nav> <!-- navBar end -->
+    <!-- Header Section -->
+    <header>
+        <div class="wrapper">    
+            <div class="headerContainer">
+                <div class="headerText">
+                    <h1>Hello! I'm Greg!</h1>
+                    <h2>A Front-End Web Dev</h2>
+                    <h3>Based in Ottawa</h3>
+                    <a href="#projects"><button class='headerButton'>Check Out My Projects</button></a>
+                </div>
+                <div class="headerImg">
+                    <img src="./assets/gregProfilePic.png" alt="Profile Picture of Greg">
+                </div>
+            </div>
+            <div class="arrow bounce">
+                <i class="fa-solid fa-arrow-down fa-2x"></i>
+            </div>
         </div> <!-- wrapper end-->
+    </header> <!-- Header end-->
+    <main id="mainContent">
+            <Section id="about" class="about"> <!-- About Section -->
+                <div class="wrapper">
+                    <h2 data-aos="fade-down">About Me</h2>
+                </div>
+            </Section> <!-- End About Section -->
+            <Section id="skills" class="skills"> <!-- Tech Stack Section -->
+                <div class="wrapper">
+                    <h2 data-aos="fade-down">Tech Stack</h2>
+                </div>
+            </Section> <!-- End Tech Stack -->
+            <Section id="projects" class="projects"> <!-- Projects Section -->
+                <div class="wrapper">
+                    <h2 data-aos="fade-down">Projects</h2>
+                </div>
+            </Section> <!-- End Projects Section -->
+            <Section id="contact" class="contact"> <!-- Contact Section -->
+                <div class="wrapper">
+                    <h2 data-aos="fade-down">Contact Me</h2>
+                </div>
+            </Section> <!-- End Contact Section -->
     </main>
     <footer>
         <div class="wrapper">
 
         </div> <!-- wrapper end -->
     </footer>
-</body>
 
+    <!-- AOS script link -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
+
+    <!-- JS link -->
+    <script src="./app.js"></script>
+</body>
 </html>

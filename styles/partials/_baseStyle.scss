@@ -1,0 +1,41 @@
+@use "./variables" as *;
+
+html {
+    font-size: 125%;
+}
+
+body {
+    background: $white;
+}
+
+.wrapper {
+    margin: 0 auto;
+    max-width: 1250px;
+    width: 95%;
+}
+
+h2, h3, h4, h5 {
+    color: $dark;
+    font-family: $PT;
+    font-weight: normal;
+}
+
+a {
+    font-family: $PT;
+    text-decoration: none;
+    color: $dark;
+    cursor: pointer;
+}
+
+ul {
+    list-style: none;
+}
+
+button {
+    background: $crimson;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    color: $white;
+    padding: 1rem 2rem;
+}
