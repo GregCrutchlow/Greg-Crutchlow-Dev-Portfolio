@@ -11,6 +11,11 @@
     <!-- Style Sheet import -->
     <link rel="stylesheet" href="./styles/style.css">
 
+    <!-- Google Fonts import-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@400;700&family=PT+Sans+Caption:wght@400;700&display=swap" rel="stylesheet">
+
     <!-- Fontawesome import -->
     <script src="https://kit.fontawesome.com/d718794c03.js" crossorigin="anonymous"></script>
 
@@ -19,11 +24,16 @@
 </head>
 
 <body>
-    
+    <!-- Skip Link-->
+    <a id='skipNav' class='screenreaderText' href='#mainContent'>
+        Skip Navigation or Skip to Content
+    </a>
+
+    <!-- Nav Bar Section -->
     <nav class="navBar">
         <div class="wrapper">
             <div class="logoContainer">
-                <a href="/"><img src="./assets/GregDev Logo White.png" alt="Greg Crutchlow's Dev Logo"></a>
+                <a href="#"><img src="./assets/GregDev Logo White.png" alt="Greg Crutchlow's Dev Logo"></a>
             </div>
             <!-- Nav Links - Mobile and Full Page -->
             <nav>
@@ -41,14 +51,26 @@
             </nav>
         </div> <!-- wrapper end -->
     </nav> <!-- navBar end -->
+    <!-- Header Section -->
     <header>
         <div class="wrapper">    
             <div class="headerContainer">
-                <h1>Hello! I'm Greg, I'm a Front-End Web Dev</h1>
+                <div class="headerText">
+                    <h1>Hello! I'm Greg!</h1>
+                    <h2>A Front-End Web Dev</h2>
+                    <h3>Based in Ottawa</h3>
+                    <a href="#projects"><button class='headerButton'>Check Out My Projects</button></a>
+                </div>
+                <div class="headerImg">
+                    <img src="./assets/gregProfilePic.png" alt="Profile Picture of Greg">
+                </div>
             </div>
-        </div>
-    </header>
-    <main>
+            <div class="arrow bounce">
+                <i class="fa-solid fa-arrow-down fa-2x"></i>
+            </div>
+        </div> <!-- wrapper end-->
+    </header> <!-- Header end-->
+    <main id="mainContent">
             <Section id="about" class="about"> <!-- About Section -->
                 <div class="wrapper">
                     <h2 data-aos="fade-down">About Me</h2>

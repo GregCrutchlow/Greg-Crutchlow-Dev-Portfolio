@@ -1,15 +1,17 @@
 @use "./variables" as *;
 
+.screenreaderText {
+    display: none;
+}
 
-
-.navBar {
+.navBar .wrapper {
     display: flex;
     justify-content: space-between;
     position: fixed;
     top: 0;
-    .wrapper {
-        display: flex;
-        justify-content: space-between;
+    right: 0;
+    left: 0;
+    background-color: transparent;
         .logoContainer {
             padding-top: 0.5rem;
             img {
@@ -21,7 +23,15 @@
             display: flex;
             li {
                 margin-left: 2rem;
+                a {
+                    color: $white;
+                    
+                }
+                &:hover {
+                    border-bottom: solid 2px $white;
+                    transition: all 0.2s ease-in-out;
+                }
             }
-        }
+        
     }
 }

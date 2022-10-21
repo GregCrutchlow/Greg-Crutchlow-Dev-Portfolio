@@ -14,17 +14,14 @@ body {
     width: 95%;
 }
 
-h1 {
+h2, h3, h4, h5 {
     color: $dark;
+    font-family: $PT;
+    font-weight: normal;
 }
-
-h2 {
-    color: black;
-    height: 2rem;
-}
-
 
 a {
+    font-family: $PT;
     text-decoration: none;
     color: $dark;
     cursor: pointer;
@@ -32,4 +29,13 @@ a {
 
 ul {
     list-style: none;
+}
+
+button {
+    background: $crimson;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    color: $white;
+    padding: 1rem 2rem;
 }
