@@ -11,14 +11,42 @@ header {
         justify-content: space-between;
         align-items: center;
         .headerText {
-            .headerButton {
+            h2 {
+                color: $white;
+                font-weight: bold;
+            }
+            .headerBtns {
+                display: flex;
                 margin: 2rem 0;
-                color: $dark;
-                background: $white;
-                &:hover {
-                    color: $white;
-                    background: $dark;
-                    transition: all 0.2s ease-in-out;
+                font-weight: bold;
+                .headerButton {
+                    color: $dark;
+                    background: $white;
+                    &:hover {
+                        color: $white;
+                        background: $dark;
+                        transition: all 0.2s ease-in-out;
+                    }
+                }
+                .headerClearBtn {
+                    display: flex;
+                    background: transparent;
+                    margin-left: 1rem;
+                    align-items: center;
+                    i {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        border: 2px solid $white;
+                        border-radius: 50%;
+                        width: 1.25rem;
+                        height: 1.25rem;
+                        margin-left: 0.75rem;
+                        font-size: 0.75rem;
+                    }
+                    &:hover {
+                        background: $dark;
+                    }
                 }
             }
         }

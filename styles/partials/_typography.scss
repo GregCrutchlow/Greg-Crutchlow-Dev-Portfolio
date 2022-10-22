@@ -1,23 +1,29 @@
 @use "./variables" as *;
 
-header {
-    h1 {
-        font-family: $Noto;
-        font-weight: 700;
-        font-size: 4rem;
-        padding: 1rem 0;
-        margin: 0;
-        color: $white;
-    }
-    h2, h3 {
-        color: $white;
-        margin: 1rem 0;
-    }
-    h2 {
-        font-size: 2rem;
 
-    }
-    h3{
-        font-size: 1rem;
-    }
+h1 {
+    font-family: $Noto;
+    font-weight: normal;
+    text-transform: uppercase;
+    font-size: 2.75rem;
+    // padding: 0.4rem 0;
+    margin: 0;
+    color: $white;
+}
+
+h2 {
+    font-size: 4.75rem;
+    margin: 0.5rem 0;
+}
+
+h3 {
+    color: $white;
+    font-weight: normal;
+}
+
+h4 {
+    margin-bottom: 0.5rem;
+    background-color: $crimson;
+    padding: 0.5rem 2rem;
+    color: $white;
 }

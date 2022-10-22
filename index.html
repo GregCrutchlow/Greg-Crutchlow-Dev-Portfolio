@@ -19,6 +19,9 @@
     <!-- Fontawesome import -->
     <script src="https://kit.fontawesome.com/d718794c03.js" crossorigin="anonymous"></script>
 
+    <!-- DevIcon import -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+
     <!-- AOS scroll library -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
@@ -48,6 +51,11 @@
                         <li><a href="#projects">Projects</a></li>
                         <li><a href="#contact">Contact</a></li>
                     </ul>
+                    <!-- <ul class="socialNav">
+                        <li><a href="https://github.com/GregCrutchlow"><i class="fa-brands fa-github"></i></a></li>
+                        <li><a href="https://twitter.com/GregCrutchlow"><i class="fa-brands fa-twitter"></i></a></li>
+                        <li><a href="https://linkedin.com/in/gregcrutchlow"><i class="fa-brands fa-linkedin"></i></a><li>
+                    </ul> -->
             </nav>
         </div> <!-- wrapper end -->
     </nav> <!-- navBar end -->
@@ -56,10 +64,13 @@
         <div class="wrapper">    
             <div class="headerContainer">
                 <div class="headerText">
-                    <h1>Hello! I'm Greg!</h1>
-                    <h2>A Front-End Web Dev</h2>
+                    <h1>Hi! I'm Greg!</h1>
+                    <h2>A Front-End <br>Web Dev</h2>
                     <h3>Based in Ottawa</h3>
-                    <a href="#projects"><button class='headerButton'>Check Out My Projects</button></a>
+                    <div class="headerBtns">
+                        <a href="#projects"><button class='headerButton'>View My Works</button></a>
+                        <a href="#contact"><button class="headerClearBtn">Contact Me<i class="fa-solid fa-arrow-down"></i></button></a>
+                    </div>
                 </div>
                 <div class="headerImg">
                     <img src="./assets/gregProfilePic.png" alt="Profile Picture of Greg">
@@ -73,12 +84,58 @@
     <main id="mainContent">
             <Section id="about" class="about"> <!-- About Section -->
                 <div class="wrapper">
-                    <h2 data-aos="fade-down">About Me</h2>
+                    <div class="aboutMeTitle">
+                        <h4 data-aos="fade-down">About Me</h4>
+                        <h2>Get To Know Me</h2>
+                    </div>
+                    <div class="aboutMeTalk">
+                        <h3>Hi, I'm <span class="name">Greg Crutchlow</span></h3>
+                        <p>I'm a Front-End Web Developer with a passion for web development. I love creating elegant, clean and accessable websites for every user. I started my web development journey in photography but soon found my calling in creating websites.</p>
+                    </div>
+                    <div class="aboutMeGraphic">
+                        <h2>4</h2>
+                        <h4>Years of <span>Experience</span>
+                        </h4>
+                    </div>
+                    <div class="aboutMeDetails">
+                        <div class="aboutName">
+                            <h5>Name:</h5>
+                            <p>Greg Crutchlow</p>
+                        </div>
+                        <div class="aboutEmail">
+                            <h5>Email:</h5>
+                            <p>gregcrutchlow@gmail.com</p>
+                        </div>
+                        <div class="aboutBirth">
+                            <h5>Date of Birth:</h5>
+                            <p>September 3rd, 1987</p>
+                        </div>
+                        <div class="aboutFrom">
+                            <h5>From:</h5>
+                            <p>Ottawa, Canada</p>
+                        </div>
+                    </div>
                 </div>
             </Section> <!-- End About Section -->
             <Section id="skills" class="skills"> <!-- Tech Stack Section -->
                 <div class="wrapper">
-                    <h2 data-aos="fade-down">Tech Stack</h2>
+                    <h4 data-aos="fade-down">My Skills</h4>
+                    <h2>How I can help in your next project</h2>
+                    <div>
+                        <ul class="techStack">
+                            <li data-aos="fade-down-right "><i class="fa-brands fa-html5" aria-hidden="true"></i>HTML 5</li>
+                            <li><i class="fa-brands fa-css3-alt" aria-hidden="true"></i>CSS 3</li>
+                            <li><i class="fa-brands fa-js" aria-hidden="true"></i>JS</li>
+                            <li><i class="fa-brands fa-sass" aria-hidden="true"></i>Sass</li>
+                            <li><i class="fa-brands fa-git-alt" aria-hidden="true"></i>Git</li>
+                            <li><i class="fa-brands fa-github" aria-hidden="true"></i>GitHub</li>
+                            <li><i class="fa-brands fa-react" aria-hidden="true"></i>React</li>
+                            <li><i class="fa-solid fa-server" aria-hidden="true"></i>REST API</li>
+                            <li><i class="fa-solid fa-pen-ruler" aria-hidden="true"></i>Accessability</li>
+                            <li><i class="devicon-firebase-plain" aria-hidden="true"></i>Firebase</li>
+                            <li><i class="devicon-photoshop-plain" aria-hidden="true"></i>Photoshop</li>
+                        </ul>
+                    </div>
                 </div>
             </Section> <!-- End Tech Stack -->
             <Section id="projects" class="projects"> <!-- Projects Section -->
@@ -89,12 +146,35 @@
             <Section id="contact" class="contact"> <!-- Contact Section -->
                 <div class="wrapper">
                     <h2 data-aos="fade-down">Contact Me</h2>
+                    <div class="contactDetails">
+                        <h3>Let's get in touch</h3>
+                        <p>I enjoy talking about new ideas and challenges. Please give as many details as possible for our first meet-up.</p>
+                        <h4>Living In:</h4>
+                        <p>Orleans, Ottawa, Canada</p>
+                        <h4>Call:</h4>
+                        <p>(613)-983-0745</p>
+                        <div>
+                            <ul class="contactSocial">
+                                <li><i class="fa-brands fa-twitter"></i></li>
+                                <li<i class="fa-brands fa-linkedin"></i></li>
+                                <li><i class="fa-brands fa-github"></i></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="contactForm">
+                        <form action="https://formsubmit.co/gregcrutchlow@gmail.com" method="POST">
+                            <input type="text" name="name" placeholder="Full Name" required>
+                            <input type="email" name="email" placeholder="Email Address" required>
+                            <textarea name="message" id="message" rows="10" placeholder="Your Message" required></textarea>
+                            <button type="submit" class="btn submitBtn"></button>
+                        </form>
+                    </div>
                 </div>
             </Section> <!-- End Contact Section -->
     </main>
     <footer>
         <div class="wrapper">
-
+            <h5>Copyright© 2022 Greg Crutchlow</h5>
         </div> <!-- wrapper end -->
     </footer>
 
