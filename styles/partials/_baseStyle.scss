@@ -14,9 +14,7 @@ body {
     width: 95%;
 }
 
-h2, h3, h4, h5 {
-    font-family: $PT;
-}
+
 
 a {
     font-family: $PT;
@@ -36,4 +34,8 @@ button {
     outline: none;
     color: $white;
     padding: 1rem 2rem;
+}
+
+section {
+    padding-top: 6rem;
 }

@@ -11,8 +11,13 @@ header {
         justify-content: space-between;
         align-items: center;
         .headerText {
+            h1 {
+                font-size: 6rem;
+                font-weight: bold;
+            }
             h2 {
                 color: $white;
+                font-size: 4rem;
                 font-weight: bold;
             }
             .headerBtns {
@@ -46,6 +51,7 @@ header {
                     }
                     &:hover {
                         background: $dark;
+                        transition: all 0.2s ease-in-out;
                     }
                 }
             }

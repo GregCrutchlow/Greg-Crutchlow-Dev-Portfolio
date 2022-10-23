@@ -249,10 +249,6 @@ body {
   width: 95%;
 }
 
-h2, h3, h4, h5 {
-  font-family: "PT Sans Caption", sans-serif;
-}
-
 a {
   font-family: "PT Sans Caption", sans-serif;
   text-decoration: none;
@@ -265,7 +261,7 @@ ul {
 }
 
 button {
-  background: rgba(158, 0, 32, 0.85);
+  background: rgba(158, 0, 32, 0.8509803922);
   border: none;
   cursor: pointer;
   outline: none;
@@ -273,8 +269,15 @@ button {
   padding: 1rem 2rem;
 }
 
+section {
+  padding-top: 6rem;
+}
+
+html {
+  font-family: "PT Sans Caption", sans-serif;
+}
+
 h1 {
-  font-family: "Noto Sans Mono", monospace;
   font-weight: normal;
   text-transform: uppercase;
   font-size: 2.75rem;
@@ -294,9 +297,13 @@ h3 {
 
 h4 {
   margin-bottom: 0.5rem;
-  background-color: rgba(158, 0, 32, 0.85);
+  background-color: rgba(158, 0, 32, 0.8509803922);
   padding: 0.5rem 2rem;
   color: rgb(228, 228, 228);
+}
+
+p {
+  line-height: 2rem;
 }
 
 .screenreaderText {
@@ -355,7 +362,7 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: rgba(158, 0, 32, 0.85);
+  background-color: rgba(158, 0, 32, 0.8509803922);
 }
 header .headerContainer {
   display: -webkit-box;
@@ -368,8 +375,13 @@ header .headerContainer {
       -ms-flex-align: center;
           align-items: center;
 }
+header .headerContainer .headerText h1 {
+  font-size: 6rem;
+  font-weight: bold;
+}
 header .headerContainer .headerText h2 {
   color: rgb(228, 228, 228);
+  font-size: 4rem;
   font-weight: bold;
 }
 header .headerContainer .headerText .headerBtns {
@@ -418,6 +430,8 @@ header .headerContainer .headerText .headerBtns .headerClearBtn i {
 }
 header .headerContainer .headerText .headerBtns .headerClearBtn:hover {
   background: #3f3f3f;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 header .headerContainer .headerImg img {
   width: 100%;
@@ -467,6 +481,110 @@ header .arrow {
             transform: translateY(-15px);
   }
 }
+.about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.about .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.about .wrapper .aboutMeTitle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.about .wrapper .aboutMeContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.about .wrapper .aboutMeContainer .aboutMeTalk {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 60%;
+}
+.about .wrapper .aboutMeContainer .aboutMeTalk h3 {
+  color: #3f3f3f;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.about .wrapper .aboutMeContainer .aboutMeTalk span {
+  border-bottom: 2px solid rgba(158, 0, 32, 0.8509803922);
+  font-weight: bold;
+}
+.about .wrapper .aboutMeContainer .aboutMeGraphic {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.about .wrapper .aboutMeContainer .aboutMeGraphic h2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 85px;
+  height: 85px;
+  font-size: 8rem;
+  background: rgba(158, 0, 32, 0.8509803922);
+  border-radius: 50%;
+  color: #3f3f3f;
+}
+.about .wrapper .aboutMeContainer .aboutMeGraphic h4 {
+  background: none;
+  color: #3f3f3f;
+  font-weight: normal;
+}
+.about .wrapper .aboutMeContainer .aboutMeGraphic h4 span {
+  font-weight: bold;
+}
+.about .wrapper .aboutMeDetails {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 150px;
+}
+.about .wrapper .aboutMeDetails h5 {
+  font-weight: bold;
+  color: grey;
+}
+
 .skills .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -482,12 +600,14 @@ header .arrow {
 }
 .skills .wrapper h4 {
   margin-bottom: 0.5rem;
-  background-color: rgba(158, 0, 32, 0.85);
+  background-color: rgba(158, 0, 32, 0.8509803922);
   padding: 0.5rem 2rem;
   color: rgb(228, 228, 228);
 }
 .skills .wrapper h2 {
-  margin-bottom: 4rem;
+  margin: 3rem 0;
+  font-size: 3rem;
+  padding-bottom: 2rem;
 }
 
 .techStack {
@@ -535,10 +655,64 @@ header .arrow {
       -ms-flex-align: center;
           align-items: center;
   border-radius: 5%;
-  background-color: rgba(158, 0, 32, 0.85);
+  background-color: rgba(158, 0, 32, 0.8509803922);
   width: 3rem;
   height: 3rem;
   font-size: 1.75rem;
   color: rgb(228, 228, 228);
   margin-bottom: 0.75rem;
+}
+
+.contact {
+  background: rgba(158, 0, 32, 0.8509803922);
+}
+.contact .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 6rem;
+}
+.contact .wrapper .contactDetails {
+  width: 35%;
+}
+.contact .wrapper .contactDetails p {
+  margin-bottom: 25px;
+  color: rgb(228, 228, 228);
+}
+.contact .wrapper .contactDetails .contactSocial {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
+}
+.contact .wrapper .contactDetails .contactSocial li {
+  margin-right: 1rem;
+  font-size: 2rem;
+  color: rgb(228, 228, 228);
+}
+.contact .wrapper .contactFormContainer {
+  width: 55%;
+}
+.contact .wrapper .contactFormContainer .contactForm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.contact .wrapper .contactFormContainer .contactForm label {
+  color: rgb(228, 228, 228);
+}
+.contact .wrapper .contactFormContainer .contactForm input, .contact .wrapper .contactFormContainer .contactForm textarea {
+  background: none;
+  margin-bottom: 20px;
+  padding-bottom: 5px;
+  border: none;
+  border-bottom: 2px solid rgb(228, 228, 228);
+  resize: none;
 }

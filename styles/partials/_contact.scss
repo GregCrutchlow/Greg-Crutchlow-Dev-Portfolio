@@ -1,0 +1,44 @@
+@use "./variables" as *;
+
+.contact{
+background: $crimson;
+    .wrapper {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 6rem;
+        .contactDetails {
+            width: 35%;
+            p {
+                margin-bottom: 25px;
+                color: $white;
+            }
+            .contactSocial {
+                display: flex;
+                padding: 0;
+                li {
+                    margin-right: 1rem;
+                    font-size: 2rem;
+                    color: $white;
+                }
+            }
+        }
+        .contactFormContainer {
+            width: 55%;
+            .contactForm {
+                display: flex;
+                flex-direction: column;
+                label {
+                    color: $white;
+                }
+                input, textarea {
+                    background: none;
+                    margin-bottom: 20px;
+                    padding-bottom: 5px;
+                    border: none;
+                    border-bottom: 2px solid $white;
+                    resize: none;
+                }
+            }
+        }
+    }
+}
