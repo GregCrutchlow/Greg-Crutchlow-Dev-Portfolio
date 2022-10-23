@@ -1,0 +1,55 @@
+@use "./variables" as *;
+
+.skills {
+    background: lightgrey;
+    padding-bottom: 3rem;
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+        h4 {
+            margin-bottom: 0.5rem;
+            background-color: $crimson;
+            padding: 0.5rem 2rem;
+            color: $white;
+        }
+        h2 {
+            margin: 3rem 0;
+            font-size: 3rem;
+            padding-bottom: 2rem;
+        }
+    }
+}
+
+
+.techStack {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 3rem;
+    margin: 0 auto;
+    width: 75%;
+    padding: 0;
+    li {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: transparent;
+        width: 125px;
+        font-family: $PT;
+        i {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 5%;
+            background-color: $crimson;
+            width: 3rem;
+            height: 3rem;
+            font-size: 1.75rem;
+            color: $white;
+            margin-bottom: 0.75rem;
+        }
+    }
+}

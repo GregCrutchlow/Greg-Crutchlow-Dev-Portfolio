@@ -1,0 +1,66 @@
+@use "./variables" as *;
+
+.about {
+    display: flex;
+    padding-bottom: 2rem;
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        .aboutMeTitle {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .aboutMeContainer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .aboutMeTalk {
+                display: flex;
+                flex-direction: column;
+                width: 60%;
+                h3 {
+                    color: $dark;
+                    font-size: 2rem;
+                    margin-bottom: 1rem;
+                }
+                span {
+                    border-bottom: 2px solid $crimson;
+                    font-weight: bold;
+                }
+            }
+            .aboutMeGraphic {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                h2 {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 85px;
+                    height: 85px;
+                    font-size: 8rem;
+                    background: $crimson;
+                    border-radius: 50%;
+                    color: $dark;
+                }
+                h4 {
+                    background: none;
+                    color: $dark;
+                    font-weight: normal;
+                    span {
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+        .aboutMeDetails {
+            display: flex;
+            gap: 150px;
+            h5 {
+                font-weight: bold;
+                color: grey;
+            }
+        }
+    }
+} 
