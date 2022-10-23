@@ -8,8 +8,16 @@ background: $crimson;
         padding-bottom: 6rem;
         .contactDetails {
             width: 35%;
+            h3 {
+                font-size: 2rem;
+            }
+            h4 {
+                background: none;
+                padding: 5px 0;
+            }
             p {
-                margin-bottom: 25px;
+                margin-top: 0;
+                padding-bottom: 25px;
                 color: $white;
             }
             .contactSocial {
@@ -18,7 +26,10 @@ background: $crimson;
                 li {
                     margin-right: 1rem;
                     font-size: 2rem;
-                    color: $white;
+                    a {
+                        color: $white;
+
+                    }
                 }
             }
         }
@@ -33,10 +44,31 @@ background: $crimson;
                 input, textarea {
                     background: none;
                     margin-bottom: 20px;
-                    padding-bottom: 5px;
+                    padding: 10px 0;
                     border: none;
                     border-bottom: 2px solid $white;
                     resize: none;
+                    color: $white;
+                }
+                *:focus {
+                    outline: none;
+                }
+                button {
+                    background: $dark;
+                    color: $white;
+                    i {
+                        padding-left: 1rem;
+                    }
+                    &:hover {
+                        background: $white;
+                        color: $crimson;
+                        transition: all 0.2s ease-in-out;
+                    }
+                    &:focus {
+                        background: $white;
+                        color: $crimson;
+                        transition: all 0.2s ease-in-out;
+                    }
                 }
             }
         }

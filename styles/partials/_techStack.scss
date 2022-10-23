@@ -1,20 +1,24 @@
 @use "./variables" as *;
 
-.skills .wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 100px 0;
-    h4 {
-        margin-bottom: 0.5rem;
-        background-color: $crimson;
-        padding: 0.5rem 2rem;
-        color: $white;
-    }
-    h2 {
-        margin: 3rem 0;
-        font-size: 3rem;
-        padding-bottom: 2rem;
+.skills {
+    background: lightgrey;
+    padding-bottom: 3rem;
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+        h4 {
+            margin-bottom: 0.5rem;
+            background-color: $crimson;
+            padding: 0.5rem 2rem;
+            color: $white;
+        }
+        h2 {
+            margin: 3rem 0;
+            font-size: 3rem;
+            padding-bottom: 2rem;
+        }
     }
 }
 
@@ -24,14 +28,14 @@
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 50px;
+    gap: 3rem;
     margin: 0 auto;
     width: 75%;
+    padding: 0;
     li {
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
         background: transparent;
         width: 125px;
         font-family: $PT;
@@ -47,5 +51,5 @@
             color: $white;
             margin-bottom: 0.75rem;
         }
-        }
+    }
 }

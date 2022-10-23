@@ -19,21 +19,66 @@
                 vertical-align: middle;
             }
         }
-        .navLinks {
-            display: flex;
-            li {
-                margin-left: 2rem;
-                a {
-                    color: $white;
-                    
+        .hiddenNav {
+            transition: 2s ease-in-out;
+            .mobileMenu {
+                width: 40px;
+                height: 40px;
+                cursor: pointer;
+                z-index: 10;
+                
+                .topBar {
+                    background: $white;
+                    width: 100%;
+                    height: 4px;
+                    border-radius: 5px;
+                    margin-bottom: 5px;
+                    transition: 0.3s linear;
                 }
-                &:hover {
-                    border-bottom: solid 2px $white;
-                    transition: all 0.2s ease-in-out;
+                .middleBar {
+                    background: $white;
+                    width: 100%;
+                    height: 4px;
+                    border-radius: 5px;
+                    margin: 10px 0;
+                    transition: 0.3s linear;
+                }
+                .bottomBar {
+                    background: $white;
+                    width: 100%;
+                    height: 4px;
+                    border-radius: 5px;
+                    margin-top: 5px;
+                    transition: 0.3s linear;
+                }
+                &.open {
+                    .topBar {
+                        transform: translateY(14px) rotate(135deg);
+                    }
+                    .middleBar {
+                    opacity: 0;
+                    }
+                    .bottomBar {
+                    transform: translateY(-14px) rotate(-135deg);
+                    }
                 }
             }
-        
-    }
+            .navLinks {
+                display: flex;
+                li {
+                    margin-left: 2rem;
+                    a {
+                        color: $white;
+                        
+                    }
+                    &:hover {
+                        border-bottom: solid 2px $white;
+                        transition: all 0.2s ease-in-out;
+                    }
+                }
+            
+        }
+        }
 }
 
 .hidden {

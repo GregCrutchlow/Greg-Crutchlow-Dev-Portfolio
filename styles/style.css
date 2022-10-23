@@ -270,7 +270,7 @@ button {
 }
 
 section {
-  padding-top: 6rem;
+  padding-top: 3rem;
 }
 
 html {
@@ -303,7 +303,7 @@ h4 {
 }
 
 p {
-  line-height: 2rem;
+  line-height: 1.75rem;
 }
 
 .screenreaderText {
@@ -330,18 +330,66 @@ p {
   width: 2rem;
   vertical-align: middle;
 }
-.navBar .wrapper .navLinks {
+.navBar .wrapper .hiddenNav {
+  -webkit-transition: 2s ease-in-out;
+  transition: 2s ease-in-out;
+}
+.navBar .wrapper .hiddenNav .mobileMenu {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  z-index: 10;
+}
+.navBar .wrapper .hiddenNav .mobileMenu .topBar {
+  background: rgb(228, 228, 228);
+  width: 100%;
+  height: 4px;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
+}
+.navBar .wrapper .hiddenNav .mobileMenu .middleBar {
+  background: rgb(228, 228, 228);
+  width: 100%;
+  height: 4px;
+  border-radius: 5px;
+  margin: 10px 0;
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
+}
+.navBar .wrapper .hiddenNav .mobileMenu .bottomBar {
+  background: rgb(228, 228, 228);
+  width: 100%;
+  height: 4px;
+  border-radius: 5px;
+  margin-top: 5px;
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
+}
+.navBar .wrapper .hiddenNav .mobileMenu.open .topBar {
+  -webkit-transform: translateY(14px) rotate(135deg);
+          transform: translateY(14px) rotate(135deg);
+}
+.navBar .wrapper .hiddenNav .mobileMenu.open .middleBar {
+  opacity: 0;
+}
+.navBar .wrapper .hiddenNav .mobileMenu.open .bottomBar {
+  -webkit-transform: translateY(-14px) rotate(-135deg);
+          transform: translateY(-14px) rotate(-135deg);
+}
+.navBar .wrapper .hiddenNav .navLinks {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-.navBar .wrapper .navLinks li {
+.navBar .wrapper .hiddenNav .navLinks li {
   margin-left: 2rem;
 }
-.navBar .wrapper .navLinks li a {
+.navBar .wrapper .hiddenNav .navLinks li a {
   color: rgb(228, 228, 228);
 }
-.navBar .wrapper .navLinks li:hover {
+.navBar .wrapper .hiddenNav .navLinks li:hover {
   border-bottom: solid 2px rgb(228, 228, 228);
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
@@ -485,6 +533,7 @@ header .arrow {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding-bottom: 2rem;
 }
 .about .wrapper {
   display: -webkit-box;
@@ -585,6 +634,10 @@ header .arrow {
   color: grey;
 }
 
+.skills {
+  background: lightgrey;
+  padding-bottom: 3rem;
+}
 .skills .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -596,7 +649,6 @@ header .arrow {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 100px 0;
 }
 .skills .wrapper h4 {
   margin-bottom: 0.5rem;
@@ -622,9 +674,10 @@ header .arrow {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  gap: 50px;
+  gap: 3rem;
   margin: 0 auto;
   width: 75%;
+  padding: 0;
 }
 .techStack li {
   display: -webkit-box;
@@ -637,9 +690,6 @@ header .arrow {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   background: transparent;
   width: 125px;
   font-family: "PT Sans Caption", sans-serif;
@@ -663,6 +713,28 @@ header .arrow {
   margin-bottom: 0.75rem;
 }
 
+.projects {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.projects .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .contact {
   background: rgba(158, 0, 32, 0.8509803922);
 }
@@ -678,8 +750,16 @@ header .arrow {
 .contact .wrapper .contactDetails {
   width: 35%;
 }
+.contact .wrapper .contactDetails h3 {
+  font-size: 2rem;
+}
+.contact .wrapper .contactDetails h4 {
+  background: none;
+  padding: 5px 0;
+}
 .contact .wrapper .contactDetails p {
-  margin-bottom: 25px;
+  margin-top: 0;
+  padding-bottom: 25px;
   color: rgb(228, 228, 228);
 }
 .contact .wrapper .contactDetails .contactSocial {
@@ -691,6 +771,8 @@ header .arrow {
 .contact .wrapper .contactDetails .contactSocial li {
   margin-right: 1rem;
   font-size: 2rem;
+}
+.contact .wrapper .contactDetails .contactSocial li a {
   color: rgb(228, 228, 228);
 }
 .contact .wrapper .contactFormContainer {
@@ -711,8 +793,31 @@ header .arrow {
 .contact .wrapper .contactFormContainer .contactForm input, .contact .wrapper .contactFormContainer .contactForm textarea {
   background: none;
   margin-bottom: 20px;
-  padding-bottom: 5px;
+  padding: 10px 0;
   border: none;
   border-bottom: 2px solid rgb(228, 228, 228);
   resize: none;
+  color: rgb(228, 228, 228);
+}
+.contact .wrapper .contactFormContainer .contactForm *:focus {
+  outline: none;
+}
+.contact .wrapper .contactFormContainer .contactForm button {
+  background: #3f3f3f;
+  color: rgb(228, 228, 228);
+}
+.contact .wrapper .contactFormContainer .contactForm button i {
+  padding-left: 1rem;
+}
+.contact .wrapper .contactFormContainer .contactForm button:hover {
+  background: rgb(228, 228, 228);
+  color: rgba(158, 0, 32, 0.8509803922);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.contact .wrapper .contactFormContainer .contactForm button:focus {
+  background: rgb(228, 228, 228);
+  color: rgba(158, 0, 32, 0.8509803922);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
