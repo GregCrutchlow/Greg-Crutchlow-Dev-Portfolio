@@ -71,7 +71,6 @@
     right: 0;
     background: transparent;
     cursor: pointer;
-
     div {
         background-color: white;
         width: 35px;
@@ -79,7 +78,6 @@
         border-radius: 3px;
         margin-bottom: 10px;
         transition: 0.3s linear;
-
     }
     &.open {
         .topBar {
