@@ -237,6 +237,7 @@ html {
 
 html {
   font-size: 125%;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -261,7 +262,7 @@ ul {
 }
 
 button {
-  background: rgba(158, 0, 32, 0.8509803922);
+  background: #9e0020;
   border: none;
   cursor: pointer;
   outline: none;
@@ -297,7 +298,7 @@ h3 {
 
 h4 {
   margin-bottom: 0.5rem;
-  background-color: rgba(158, 0, 32, 0.8509803922);
+  background-color: #9e0020;
   padding: 0.5rem 2rem;
   color: rgb(228, 228, 228);
 }
@@ -310,6 +311,16 @@ p {
   display: none;
 }
 
+.navBar {
+  width: 100%;
+  height: 63px;
+  background: #9e0020;
+  position: fixed;
+  top: 0;
+  padding: 20px 0;
+  z-index: 10;
+}
+
 .navBar .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -317,86 +328,83 @@ p {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: fixed;
   top: 0;
   right: 0;
   left: 0;
-  background-color: transparent;
-}
-.navBar .wrapper .logoContainer {
-  padding-top: 0.5rem;
+  height: 63px;
+  background-color: #9e0020;
 }
 .navBar .wrapper .logoContainer img {
   width: 2rem;
   vertical-align: middle;
 }
-.navBar .wrapper .hiddenNav {
-  -webkit-transition: 2s ease-in-out;
-  transition: 2s ease-in-out;
-}
-.navBar .wrapper .hiddenNav .mobileMenu {
-  width: 40px;
-  height: 40px;
-  cursor: pointer;
-  z-index: 10;
-}
-.navBar .wrapper .hiddenNav .mobileMenu .topBar {
-  background: rgb(228, 228, 228);
-  width: 100%;
-  height: 4px;
-  border-radius: 5px;
-  margin-bottom: 5px;
-  -webkit-transition: 0.3s linear;
-  transition: 0.3s linear;
-}
-.navBar .wrapper .hiddenNav .mobileMenu .middleBar {
-  background: rgb(228, 228, 228);
-  width: 100%;
-  height: 4px;
-  border-radius: 5px;
-  margin: 10px 0;
-  -webkit-transition: 0.3s linear;
-  transition: 0.3s linear;
-}
-.navBar .wrapper .hiddenNav .mobileMenu .bottomBar {
-  background: rgb(228, 228, 228);
-  width: 100%;
-  height: 4px;
-  border-radius: 5px;
-  margin-top: 5px;
-  -webkit-transition: 0.3s linear;
-  transition: 0.3s linear;
-}
-.navBar .wrapper .hiddenNav .mobileMenu.open .topBar {
-  -webkit-transform: translateY(14px) rotate(135deg);
-          transform: translateY(14px) rotate(135deg);
-}
-.navBar .wrapper .hiddenNav .mobileMenu.open .middleBar {
-  opacity: 0;
-}
-.navBar .wrapper .hiddenNav .mobileMenu.open .bottomBar {
-  -webkit-transform: translateY(-14px) rotate(-135deg);
-          transform: translateY(-14px) rotate(-135deg);
-}
-.navBar .wrapper .hiddenNav .navLinks {
+.navBar .wrapper .navLinks {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-.navBar .wrapper .hiddenNav .navLinks li {
+.navBar .wrapper .navLinks li {
   margin-left: 2rem;
 }
-.navBar .wrapper .hiddenNav .navLinks li a {
+.navBar .wrapper .navLinks li a {
   color: rgb(228, 228, 228);
 }
-.navBar .wrapper .hiddenNav .navLinks li:hover {
+.navBar .wrapper .navLinks li:hover {
   border-bottom: solid 2px rgb(228, 228, 228);
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
 
-.hidden {
+.hiddenNav.show {
+  -webkit-transition: 2s ease-in-out;
+  transition: 2s ease-in-out;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: flex;
+}
+
+.hiddenNav {
   display: none;
+  -webkit-transition: 2s linear ease-in-out;
+  transition: 2s linear ease-in-out;
+  margin-right: 5rem;
+}
+
+.mobileMenu {
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  right: 0;
+  background: transparent;
+  cursor: pointer;
+}
+.mobileMenu div {
+  background-color: white;
+  width: 35px;
+  height: 3px;
+  border-radius: 3px;
+  margin-bottom: 10px;
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
+}
+.mobileMenu.open .topBar {
+  -webkit-transform: translateY(13px) rotate(135deg);
+          transform: translateY(13px) rotate(135deg);
+}
+.mobileMenu.open .middleBar {
+  opacity: 0;
+}
+.mobileMenu.open .bottomBar {
+  -webkit-transform: translateY(-13px) rotate(-135deg);
+          transform: translateY(-13px) rotate(-135deg);
 }
 
 header {
@@ -410,7 +418,7 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: rgba(158, 0, 32, 0.8509803922);
+  background-color: #9e0020;
 }
 header .headerContainer {
   display: -webkit-box;
@@ -490,9 +498,23 @@ header .headerContainer .headerImg img {
 header .arrow {
   color: rgb(228, 228, 228);
   position: absolute;
-  left: 50%;
   bottom: 5%;
   width: 2rem;
+}
+header .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 .bounce {
@@ -555,6 +577,7 @@ header .arrow {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  text-align: center;
 }
 .about .wrapper .aboutMeContainer {
   display: -webkit-box;
@@ -583,7 +606,7 @@ header .arrow {
   margin-bottom: 1rem;
 }
 .about .wrapper .aboutMeContainer .aboutMeTalk span {
-  border-bottom: 2px solid rgba(158, 0, 32, 0.8509803922);
+  border-bottom: 2px solid #9e0020;
   font-weight: bold;
 }
 .about .wrapper .aboutMeContainer .aboutMeGraphic {
@@ -611,7 +634,7 @@ header .arrow {
   width: 85px;
   height: 85px;
   font-size: 8rem;
-  background: rgba(158, 0, 32, 0.8509803922);
+  background: #9e0020;
   border-radius: 50%;
   color: #3f3f3f;
 }
@@ -627,6 +650,11 @@ header .arrow {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   gap: 150px;
 }
 .about .wrapper .aboutMeDetails h5 {
@@ -652,7 +680,7 @@ header .arrow {
 }
 .skills .wrapper h4 {
   margin-bottom: 0.5rem;
-  background-color: rgba(158, 0, 32, 0.8509803922);
+  background-color: #9e0020;
   padding: 0.5rem 2rem;
   color: rgb(228, 228, 228);
 }
@@ -660,6 +688,7 @@ header .arrow {
   margin: 3rem 0;
   font-size: 3rem;
   padding-bottom: 2rem;
+  text-align: center;
 }
 
 .techStack {
@@ -705,7 +734,7 @@ header .arrow {
       -ms-flex-align: center;
           align-items: center;
   border-radius: 5%;
-  background-color: rgba(158, 0, 32, 0.8509803922);
+  background-color: #9e0020;
   width: 3rem;
   height: 3rem;
   font-size: 1.75rem;
@@ -736,7 +765,7 @@ header .arrow {
 }
 
 .contact {
-  background: rgba(158, 0, 32, 0.8509803922);
+  background: #9e0020;
 }
 .contact .wrapper {
   display: -webkit-box;
@@ -811,13 +840,125 @@ header .arrow {
 }
 .contact .wrapper .contactFormContainer .contactForm button:hover {
   background: rgb(228, 228, 228);
-  color: rgba(158, 0, 32, 0.8509803922);
+  color: #9e0020;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
 .contact .wrapper .contactFormContainer .contactForm button:focus {
   background: rgb(228, 228, 228);
-  color: rgba(158, 0, 32, 0.8509803922);
+  color: #9e0020;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
+}
+
+@media (max-width: 1250px) {
+  header .headerContainer .headerText h1 {
+    font-size: 4rem;
+  }
+  header .headerContainer .headerText h2 {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 960px) {
+  header .headerContainer .headerImg img {
+    height: 300px;
+  }
+  .about .wrapper .aboutMeDetails {
+    gap: 75px;
+  }
+}
+@media (max-width: 760px) {
+  header .headerContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  header .headerContainer .headerText .headerBtns {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  header .headerContainer .headerImg img {
+    height: 250px;
+  }
+  .about .wrapper .aboutMeContainer .aboutMeTalk h3 {
+    font-size: 1.75rem;
+  }
+  .about .wrapper .aboutMeDetails {
+    gap: 25px;
+  }
+  .contact .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .contact .wrapper .contactDetails {
+    width: 75%;
+  }
+  .contact .wrapper .contactFormContainer {
+    width: 75%;
+  }
+}
+@media (max-width: 480px) {
+  .navBar .wrapper .hiddenNav .navLinks {
+    margin-top: 3rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: #9e0020;
+    width: 50%;
+  }
+  .navBar .wrapper .hiddenNav .navLinks li {
+    margin-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  header .headerContainer .headerText h1 {
+    font-size: 2.5rem;
+  }
+  header .headerContainer .headerText h2 {
+    font-size: 1.5rem;
+  }
+  .about .wrapper .aboutMeContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .about .wrapper .aboutMeContainer .aboutMeTalk {
+    width: 75%;
+  }
+  .about .wrapper .aboutMeContainer .aboutMeTalk h3 {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 360px) {
+  header .headerContainer .headerText .headerBtns {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  header .headerContainer .headerText .headerBtns .headerClearBtn {
+    margin-left: 0;
+    margin-top: 0.25rem;
+  }
+  header .arrow {
+    left: 47%;
+  }
+  .techStack {
+    gap: 1.5rem;
+    width: 85%;
+  }
 }

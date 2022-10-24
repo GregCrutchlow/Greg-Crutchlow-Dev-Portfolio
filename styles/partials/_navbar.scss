@@ -3,66 +3,34 @@
 .screenreaderText {
     display: none;
 }
+.navBar {
+    width: 100%;
+    height: 63px;
+    background: $crimson;
+    position: fixed;
+    top: 0;
+    padding: 20px 0;
+        z-index: 10;
+}
 
 .navBar .wrapper {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     position: fixed;
     top: 0;
     right: 0;
     left: 0;
-    background-color: transparent;
+    height: 63px;
+    background-color: $crimson;
+
+
         .logoContainer {
-            padding-top: 0.5rem;
             img {
                 width: 2rem;
                 vertical-align: middle;
             }
         }
-        .hiddenNav {
-            transition: 2s ease-in-out;
-            .mobileMenu {
-                width: 40px;
-                height: 40px;
-                cursor: pointer;
-                z-index: 10;
-                
-                .topBar {
-                    background: $white;
-                    width: 100%;
-                    height: 4px;
-                    border-radius: 5px;
-                    margin-bottom: 5px;
-                    transition: 0.3s linear;
-                }
-                .middleBar {
-                    background: $white;
-                    width: 100%;
-                    height: 4px;
-                    border-radius: 5px;
-                    margin: 10px 0;
-                    transition: 0.3s linear;
-                }
-                .bottomBar {
-                    background: $white;
-                    width: 100%;
-                    height: 4px;
-                    border-radius: 5px;
-                    margin-top: 5px;
-                    transition: 0.3s linear;
-                }
-                &.open {
-                    .topBar {
-                        transform: translateY(14px) rotate(135deg);
-                    }
-                    .middleBar {
-                    opacity: 0;
-                    }
-                    .bottomBar {
-                    transform: translateY(-14px) rotate(-135deg);
-                    }
-                }
-            }
             .navLinks {
                 display: flex;
                 li {
@@ -78,9 +46,48 @@
                 }
             
         }
-        }
 }
 
-.hidden {
+
+
+.hiddenNav.show {
+    transition: 2s ease-in-out;
+    display: flex;
+    align-items: center;
+    display: flex;
+}
+.hiddenNav {
     display: none;
+    transition: 2s linear ease-in-out;
+    margin-right: 5rem;
+}
+
+.mobileMenu {
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    right: 0;
+    background: transparent;
+    cursor: pointer;
+
+    div {
+        background-color: white;
+        width: 35px;
+        height: 3px;
+        border-radius: 3px;
+        margin-bottom: 10px;
+        transition: 0.3s linear;
+
+    }
+    &.open {
+        .topBar {
+            transform: translateY(13px) rotate(135deg);
+        }
+        .middleBar {
+        opacity: 0;
+        }
+        .bottomBar {
+        transform: translateY(-13px) rotate(-135deg);
+        }
+    }
 }
