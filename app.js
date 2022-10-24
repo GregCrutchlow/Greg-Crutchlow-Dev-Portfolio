@@ -1,5 +1,6 @@
 const navShow = document.querySelector('.hiddenNav');
 const hamburgerMenu = document.querySelector('.mobileMenu');
+const headerPic = document.querySelector('.headerImg')
 
 hamburgerMenu.addEventListener('click', function handleClick(event) {
     event.target.classList.toggle('open');
@@ -9,3 +10,5 @@ hamburgerMenu.addEventListener('click', function handleClick(event) {
 hamburgerMenu.addEventListener('click', () => {
     navShow.classList.toggle('show');
 })
+
+
