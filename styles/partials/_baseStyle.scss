@@ -2,6 +2,7 @@
 
 html {
     font-size: 125%;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -34,7 +35,7 @@ button {
     outline: none;
     color: $white;
     padding: 1rem 2rem;
-    
+
 }
 
 section {

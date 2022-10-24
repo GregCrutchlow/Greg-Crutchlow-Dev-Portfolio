@@ -1,0 +1,150 @@
+@use "./variables" as *;
+
+@media (max-width: 1250px) {
+    header{
+        .headerContainer {
+            .headerText{
+                h1 {
+                    font-size: 4rem;
+                }
+                h2 {
+                    font-size: 2rem;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 960px) {
+    header{
+        .headerContainer {
+            .headerImg{
+                img {
+                    height: 300px;
+                }
+            }
+        }
+    }
+    .about {
+        .wrapper {
+            .aboutMeDetails {
+                gap: 75px;
+                
+            }
+        }
+    }
+}
+
+@media (max-width: 760px) {
+    header {
+        .headerContainer {
+            flex-direction: column-reverse;
+            .headerText {
+                .headerBtns{
+                    justify-content: center;
+                }
+            }
+            .headerImg {
+                img {
+                    height: 250px;
+                }
+            }
+        }
+    }
+
+    .about {
+        .wrapper {
+            .aboutMeContainer {
+                .aboutMeTalk {
+                    h3 {
+                        font-size: 1.75rem;
+                    }
+                }
+            }
+            .aboutMeDetails {
+                gap: 25px;
+            }
+        }
+    }
+    .contact {
+        .wrapper {
+            flex-direction: column;
+            align-items: center;
+            .contactDetails {
+                width: 75%;
+            }
+            .contactFormContainer {
+                width: 75%;
+            }
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .navBar .wrapper {
+        .hiddenNav {
+            .navLinks {
+                margin-top: 3rem;
+                flex-direction: column;
+                position: absolute;
+                right: 0;
+                top: 0;
+                background: $crimson;
+                width: 50%;
+                li {
+                    margin-top: 1rem;
+                    padding-bottom: 1rem;
+                }
+            }
+        }
+    }
+    header {
+        .headerContainer {
+            .headerText {
+                h1 {
+                    font-size: 2.5rem;
+                }
+                h2 {
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
+    .about {
+        .wrapper {
+            .aboutMeContainer {
+                flex-direction: column;
+                .aboutMeTalk {
+                    width: 75%;
+                    h3 {
+                        font-size: 1.50rem;
+                    }
+                }
+            }
+        }
+    }    
+}
+
+@media (max-width: 360px) {
+    header {
+        .headerContainer {
+            .headerText {
+                .headerBtns {
+                    flex-direction: column;
+                    align-items: center;
+                    .headerClearBtn {
+                        margin-left: 0;
+                        margin-top: 0.25rem;
+                    }
+                }
+            }
+        }
+        .arrow {
+            left: 47%;
+        }
+    }
+    .techStack {
+        gap: 1.5rem;
+        width: 85%;
+    }
+}
