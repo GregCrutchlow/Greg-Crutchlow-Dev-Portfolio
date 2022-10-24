@@ -33,14 +33,16 @@
         }
             .navLinks {
                 display: flex;
+
                 li {
                     margin-left: 2rem;
                     a {
                         color: $white;
-                        
+                        transition: all 0.2s ease-in-out;
                     }
                     &:hover {
-                        border-bottom: solid 2px $white;
+                        scale: 1.25;
+                        border-bottom: 10px 10px darkgray;
                         transition: all 0.2s ease-in-out;
                     }
                 }
