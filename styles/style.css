@@ -352,9 +352,12 @@ p {
 }
 .navBar .wrapper .navLinks li a {
   color: rgb(228, 228, 228);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 .navBar .wrapper .navLinks li:hover {
-  border-bottom: solid 2px rgb(228, 228, 228);
+  scale: 1.25;
+  border-bottom: 10px 10px darkgray;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
