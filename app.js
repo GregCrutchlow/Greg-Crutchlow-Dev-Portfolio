@@ -16,3 +16,4 @@ icon.addEventListener('click', () => {
     icon.classList.toggle('open')
 })
 
+fu

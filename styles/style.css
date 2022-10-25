@@ -1212,6 +1212,9 @@ header .wrapper {
     margin-left: 0;
     margin-top: 0.25rem;
   }
+  header .headerContainer .headerImg img {
+    height: 250px;
+  }
   header .arrow {
     left: 47%;
   }
