@@ -3,9 +3,142 @@
 .projects {
     display: flex;
     flex-direction: column;
+    margin-bottom: 100px;
     .wrapper {
         display: flex;
         flex-direction: column;
         align-items: center;
+        .projectContainer {
+            margin-top: 4rem;
+            display: flex;
+            flex-direction: column;
+            .project1, .project3 {
+                display: flex;
+                justify-content: space-between;
+                gap: 3rem;
+                padding-right: 50px;
+                .projectImg {
+                    img {
+                        border: 5px solid $crimson;
+                        height: 300px;
+                        max-width: 100%;
+                        transition: all 0.2s ease-in-out;
+                        &:hover {
+                            border: 5px solid $dark;
+                            scale: 0.95;
+                        }
+                    }
+                }
+                .projectDesc {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    width: 55%;
+                    h3 {
+                        color: $crimson;
+                        text-transform: uppercase;
+                        font-weight: bold;
+                        margin: 0;
+                    }
+                    p {
+                        line-height: 1.25;
+                        margin: 0;
+                    }
+                    .skillsUsed {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        ul {
+                            display: flex;
+                            padding: 0;
+                            li {
+                                padding-right: 0.75rem;
+                                i {
+                                    font-size: 1.5rem;
+                                }
+                            }
+                        }
+                        .projectBtn {
+                            li {
+                                a {
+                                    button {
+                                        border-radius: 5px;
+                                        &:hover {
+                                            background: $dark;
+                                            color: $white;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .project2 {
+                display: flex;
+                justify-content: space-between;
+                flex-direction: row-reverse;
+                gap: 3rem;
+                padding: 50px 0 50px;
+                .projectImg {
+                    img {
+                        border: 5px solid $crimson;
+                        height: 300px;
+                        max-width: 100%;
+                        transition: all 0.2s ease-in-out;
+                        &:hover {
+                            border: 5px solid $dark;
+                            scale: 0.95;
+                        }
+                    }
+                }
+                .projectDesc {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    width: 55%;
+                    text-align: right;
+                    h3 {
+                        color: $crimson;
+                        text-transform: uppercase;
+                        font-weight: bold;
+                        margin: 0;
+                    }
+                    p {
+                        line-height: 1.25;
+                        margin: 0;
+                    }
+                    .skillsUsed {
+                        display: flex;
+                        flex-direction: row-reverse;
+                        align-items: center;
+                        ul {
+                            display: flex;
+                            padding: 0;
+                            li {
+                                padding-left: 0.75rem;
+                                i {
+                                    font-size: 1.5rem;
+                                }
+                            }
+                        }
+                        .projectBtn {
+                            li {
+                                a {
+                                    button {
+                                        border-radius: 5px;
+                                        &:hover {
+                                            background: $dark;
+                                            color: $white;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            
+        }
     }
 }

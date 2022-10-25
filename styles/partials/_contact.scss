@@ -9,6 +9,7 @@ background: $crimson;
         .contactDetails {
             width: 35%;
             h3 {
+                margin-top: 0;
                 font-size: 2rem;
             }
             h4 {
@@ -28,16 +29,23 @@ background: $crimson;
                     font-size: 2rem;
                     a {
                         color: $white;
-
+                        transition: all 0.2s ease-in-out;
+                        &:hover {
+                            color: $dark;
+                        }
                     }
                 }
             }
         }
         .contactFormContainer {
             width: 55%;
+            h3 {
+                margin-top: 0;
+            }
             .contactForm {
                 display: flex;
                 flex-direction: column;
+                margin-top: 0;
                 label {
                     color: $white;
                 }
@@ -56,8 +64,15 @@ background: $crimson;
                 button {
                     background: $dark;
                     color: $white;
+                    display: flex;
+                    justify-content: center;
                     i {
-                        padding-left: 1rem;
+                        margin-left: 1rem;
+                        border: 2px solid $white;
+                        border-radius: 50%;
+                        padding: 3px;
+                        font-size: 0.75rem;
+                        
                     }
                     &:hover {
                         background: $white;

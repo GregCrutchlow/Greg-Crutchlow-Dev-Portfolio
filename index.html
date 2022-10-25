@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal portfolio page for Greg Crutchlow as a front-end web developer, showing off skills and projects I've worked on.">
     <link rel="shortcut icon" href="./assets/GregDev Logo White.png" type="image/x-icon">
     <title>Greg Crutchlow Developer</title>
 
@@ -39,12 +40,12 @@
                 <a href="#"><img src="./assets/GregDev Logo White.png" alt="Greg Crutchlow's Dev Logo"></a>
             </div>
             <!-- Nav Links - Mobile and Full Page -->
-            <div class="mobileMenu">
-                <div class="topBar"></div>
-                <div class="middleBar"></div>
-                <div class="bottomBar"></div>
+            <div class="mobileMenu" id="icon">
+                <div class="topBar" id="bar1"></div>
+                <div class="middleBar" id="bar2"></div>
+                <div class="bottomBar" id="bar3"></div>
             </div>
-            <nav class="hiddenNav">
+            <nav class="hiddenNav" id="nav">
                 <ul class="navLinks" id="navLinks">
                     <li><a href="#about">About</a></li>
                     <li><a href="#skills">Tech Stack</a></li>
@@ -96,9 +97,7 @@
                             <p>When I'm not coding, I spend my time with my family or doing a handful of hobbies that occupy my time, including but not limited to: anything mechanical keyboard related, Magic The Gathering, Leatherworking (beginner) and wood working.</p>
                         </div>
                         <div class="aboutMeGraphic">
-                            <h2>4</h2>
-                            <h4>Years of <span>Experience</span>
-                            </h4>
+                            <img src="./assets/gregProfilePic02.webp" alt="Profile picture of Greg outdoors">
                         </div>
                     </div>
                     <div class="aboutMeDetails">
@@ -149,6 +148,72 @@
             <Section id="projects" class="projects"> <!-- Projects Section -->
                 <div class="wrapper">
                     <h4 data-aos="fade-down">Projects</h4>
+                    <div class="projectContainer">
+                        <article class="project1" data-aos="fade-right">
+                            <div class="projectImg">
+                                <a href="https://tasty44.netlify.app"><img src="./assets/tasty44.png" alt="screenshot of Tasty website made by Greg"></a>
+                            </div>
+                            <div class="projectDesc">
+                                <h3>The Tasty Website</h3>
+                                <p>Built during bootcamp at Juno College cohort 44. First project building a website. Built to learn and test skills pertaining to HTML, CSS as well as Accessability and ease of use for the user.</p>
+                                <div class="skillsUsed">
+                                    <ul>
+                                        <li><i class="devicon-html5-plain" aria-hidden="true"></i></li>
+                                        <li><i class="devicon-css3-plain" aria-hidden="true"></i></li>
+                                        <li><i class="fa-solid fa-universal-access" aria-hidden="true"></i></li>
+                                    </ul>
+                                    <ul class="projectBtn">
+                                        <li><a href="https://tasty44.netlify.app"><button>Live Site</button></a></li>
+                                        <li><a href="https://github.com/GregCrutchlow/gregCrutchlowAssignmentOne"><button>Github</button></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="project2" data-aos="fade-left">
+                            <div class="projectImg">
+                                <a href="https://therestaurantmall44.netlify.app"><img src="./assets/restaurantmall44.png" alt="screenshot of The Restaurant Mall website built by Greg"></a>
+                            </div>
+                            <div class="projectDesc">
+                                <h3>The Restaurant Mall</h3>
+                                <p>Built during bootcamp at Juno College cohort 44. First project during the bootcamp with new skills learned, including Sass for the first time.</p>
+                                <div class="skillsUsed">
+                                    <ul>
+                                        <li><i class="devicon-html5-plain" aria-hidden="true"></i></li>
+                                        <li><i class="devicon-css3-plain" aria-hidden="true"></i></li>
+                                        <li><i class="devicon-sass-original" aria-hidden="true"></i></li>
+                                        <li><i class="fa-brands fa-js" aria-hidden="true"></i></li>
+                                        <li><i class="fa-solid fa-universal-access" aria-hidden="true"></i></li>
+                                    </ul>
+                                    <ul class="projectBtn">
+                                        <li><a href="https://therestaurantmall44.netlify.app"><button>Live Site</button></a></li>
+                                        <li><a href="https://github.com/GregCrutchlow/gregCrutchlowProjectOne"><button>Github</button></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="project3" data-aos="fade-right">
+                            <div class="projectImg">
+                                <a href="https://pokemon-app-44.netlify.app"><img src="./assets/pokemonapp44.png" alt="screenshot of Pokemon App website by Greg and Olsi"></a>
+                            </div>
+                            <div class="projectDesc">
+                                <h3>Pokemon App</h3>
+                                <p>Built during bootcamp at Juno College cohort 44. First pair programming project, built with classmate Olsi Kule. Implemented REST API as well other JS techniques to bring the project forward.</p>
+                                <div class="skillsUsed">
+                                    <ul>
+                                        <li><i class="devicon-html5-plain" aria-hidden="true"></i></li>
+                                        <li><i class="devicon-css3-plain" aria-hidden="true"></i></li>
+                                        <li><i class="devicon-sass-original" aria-hidden="true"></i></li>
+                                        <li><i class="fa-brands fa-js" aria-hidden="true"></i></li>
+                                        <li><i class="fa-solid fa-people-group" aria-hidden="true"></i></li>
+                                    </ul>
+                                    <ul class="projectBtn">
+                                        <li><a href="https://pokemon-app-44.netlify.app/"><button>Live Site</button></a></li>
+                                        <li><a href="https://github.com/OlsiGregPokemonApp/main"><button>Github</button></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
                 </div>
             </Section> <!-- End Projects Section -->
             <Section id="contact" class="contact"> <!-- Contact Section -->
