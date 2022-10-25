@@ -71,23 +71,36 @@
     right: 0;
     background: transparent;
     cursor: pointer;
-    div {
+    .topBar, .middleBar, .bottomBar {
         background-color: white;
         width: 35px;
         height: 3px;
         border-radius: 3px;
         margin-bottom: 10px;
-        transition: 0.3s linear;
-    }
-    &.open {
-        .topBar {
-            transform: translateY(13px) rotate(135deg);
-        }
-        .middleBar {
-        opacity: 0;
-        }
-        .bottomBar {
-        transform: translateY(-13px) rotate(-135deg);
-        }
+        transition: all 400ms cubic-bezier(.84,.06,.52,1.8);
     }
 }
+
+.open {
+    .topBar.bar1 {
+        transform: translateY(13px) rotate(135deg);
+        animation-delay: 0.1s;
+    }
+    .middleBar.bar2 {
+    opacity: 0;
+    }
+    .bottomBar.bar3 {
+    transform: translateY(-13px) rotate(-135deg);
+    animation-delay: 0.1s;
+    }
+}
+
+// .icon-1. {
+//   transform: rotate(40deg);
+// }
+// .icon-3.b {
+//   transform: rotate(-40deg);
+// }
+// .icon-2.c {
+//   opacity: 0;
+// }
