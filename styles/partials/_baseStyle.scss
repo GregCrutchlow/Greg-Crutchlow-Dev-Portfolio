@@ -3,18 +3,19 @@
 html {
     font-size: 125%;
     scroll-behavior: smooth;
-
+    overflow-x: hidden;
 }
 
 body {
     background: $white;
+    overflow-x: hidden;
 }
 
 .wrapper {
     margin: 0 auto;
     max-width: 1250px;
     width: 95%;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 
