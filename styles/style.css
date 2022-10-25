@@ -248,7 +248,7 @@ body {
   margin: 0 auto;
   max-width: 1250px;
   width: 95%;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 a {
@@ -338,6 +338,7 @@ p {
   left: 0;
   height: 63px;
   background-color: #9e0020;
+  overflow-x: hidden;
 }
 .navBar .wrapper .logoContainer img {
   width: 2rem;
