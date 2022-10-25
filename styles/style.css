@@ -267,6 +267,7 @@ ul {
 button {
   background: #9e0020;
   border: none;
+  border-radius: 5px;
   cursor: pointer;
   outline: none;
   color: rgb(228, 228, 228);
@@ -302,6 +303,7 @@ h3 {
 h4 {
   margin-bottom: 0.5rem;
   background-color: #9e0020;
+  border-radius: 5px;
   padding: 0.5rem 2rem;
   color: rgb(228, 228, 228);
 }
@@ -563,6 +565,10 @@ header .wrapper {
             transform: translateY(-15px);
   }
 }
+.headerImgFun {
+  border: dotted 2px green;
+}
+
 .about {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -705,6 +711,7 @@ header .wrapper {
   margin: 0 auto;
   width: 75%;
   padding-bottom: 10px;
+  padding-left: 0;
 }
 .techStack li {
   display: -webkit-box;
