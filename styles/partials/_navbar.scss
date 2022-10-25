@@ -4,7 +4,7 @@
     display: none;
 }
 .navBar {
-    width: 100%;
+    width: 100vw;
     height: 63px;
     background: $crimson;
     position: fixed;
@@ -23,8 +23,6 @@
     left: 0;
     height: 63px;
     background-color: $crimson;
-
-
         .logoContainer {
             img {
                 width: 2rem;
@@ -33,7 +31,6 @@
         }
             .navLinks {
                 display: flex;
-
                 li {
                     margin-left: 2rem;
                     a {
@@ -49,8 +46,6 @@
             
         }
 }
-
-
 
 .hiddenNav.show {
     transition: 2s ease-in-out;
@@ -94,13 +89,3 @@
     animation-delay: 0.1s;
     }
 }
-
-// .icon-1. {
-//   transform: rotate(40deg);
-// }
-// .icon-3.b {
-//   transform: rotate(-40deg);
-// }
-// .icon-2.c {
-//   opacity: 0;
-// }
