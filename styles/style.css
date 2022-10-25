@@ -662,6 +662,7 @@ header .wrapper {
 .skills {
   background: lightgrey;
   padding-bottom: 3rem;
+  margin-bottom: 1rem;
 }
 .skills .wrapper {
   display: -webkit-box;
@@ -703,7 +704,7 @@ header .wrapper {
   gap: 3rem;
   margin: 0 auto;
   width: 75%;
-  padding: 0;
+  padding-bottom: 10px;
 }
 .techStack li {
   display: -webkit-box;
