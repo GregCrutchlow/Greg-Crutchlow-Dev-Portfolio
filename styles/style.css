@@ -248,6 +248,7 @@ body {
   margin: 0 auto;
   max-width: 1250px;
   width: 95%;
+  overflow: hidden;
 }
 
 a {
@@ -312,7 +313,7 @@ p {
 }
 
 .navBar {
-  width: 100%;
+  width: 100vw;
   height: 63px;
   background: #9e0020;
   position: fixed;
