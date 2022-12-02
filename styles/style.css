@@ -668,7 +668,7 @@ header .wrapper {
 .skills {
   background: lightgrey;
   padding-bottom: 3rem;
-  margin-bottom: 1rem;
+  margin-bottom: 0.75rem;
 }
 .skills .wrapper {
   display: -webkit-box;
@@ -755,7 +755,7 @@ header .wrapper {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 }
 .projects .wrapper {
   display: -webkit-box;
@@ -770,7 +770,7 @@ header .wrapper {
           align-items: center;
 }
 .projects .wrapper .projectContainer {
-  margin-top: 4rem;
+  margin-top: 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -779,7 +779,8 @@ header .wrapper {
       -ms-flex-direction: column;
           flex-direction: column;
 }
-.projects .wrapper .projectContainer .project1, .projects .wrapper .projectContainer .project3 {
+.projects .wrapper .projectContainer .project1,
+.projects .wrapper .projectContainer .project3 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -789,18 +790,21 @@ header .wrapper {
   gap: 3rem;
   padding-right: 50px;
 }
-.projects .wrapper .projectContainer .project1 .projectImg img, .projects .wrapper .projectContainer .project3 .projectImg img {
+.projects .wrapper .projectContainer .project1 .projectImg img,
+.projects .wrapper .projectContainer .project3 .projectImg img {
   border: 5px solid #9e0020;
   height: 300px;
   max-width: 100%;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
-.projects .wrapper .projectContainer .project1 .projectImg img:hover, .projects .wrapper .projectContainer .project3 .projectImg img:hover {
+.projects .wrapper .projectContainer .project1 .projectImg img:hover,
+.projects .wrapper .projectContainer .project3 .projectImg img:hover {
   border: 5px solid #3f3f3f;
   scale: 0.95;
 }
-.projects .wrapper .projectContainer .project1 .projectDesc, .projects .wrapper .projectContainer .project3 .projectDesc {
+.projects .wrapper .projectContainer .project1 .projectDesc,
+.projects .wrapper .projectContainer .project3 .projectDesc {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -813,17 +817,20 @@ header .wrapper {
           justify-content: center;
   width: 55%;
 }
-.projects .wrapper .projectContainer .project1 .projectDesc h3, .projects .wrapper .projectContainer .project3 .projectDesc h3 {
+.projects .wrapper .projectContainer .project1 .projectDesc h3,
+.projects .wrapper .projectContainer .project3 .projectDesc h3 {
   color: #9e0020;
   text-transform: uppercase;
   font-weight: bold;
   margin: 0;
 }
-.projects .wrapper .projectContainer .project1 .projectDesc p, .projects .wrapper .projectContainer .project3 .projectDesc p {
+.projects .wrapper .projectContainer .project1 .projectDesc p,
+.projects .wrapper .projectContainer .project3 .projectDesc p {
   line-height: 1.25;
   margin: 0;
 }
-.projects .wrapper .projectContainer .project1 .projectDesc .skillsUsed, .projects .wrapper .projectContainer .project3 .projectDesc .skillsUsed {
+.projects .wrapper .projectContainer .project1 .projectDesc .skillsUsed,
+.projects .wrapper .projectContainer .project3 .projectDesc .skillsUsed {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -834,26 +841,32 @@ header .wrapper {
       -ms-flex-align: center;
           align-items: center;
 }
-.projects .wrapper .projectContainer .project1 .projectDesc .skillsUsed ul, .projects .wrapper .projectContainer .project3 .projectDesc .skillsUsed ul {
+.projects .wrapper .projectContainer .project1 .projectDesc .skillsUsed ul,
+.projects .wrapper .projectContainer .project3 .projectDesc .skillsUsed ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   padding: 0;
 }
-.projects .wrapper .projectContainer .project1 .projectDesc .skillsUsed ul li, .projects .wrapper .projectContainer .project3 .projectDesc .skillsUsed ul li {
+.projects .wrapper .projectContainer .project1 .projectDesc .skillsUsed ul li,
+.projects .wrapper .projectContainer .project3 .projectDesc .skillsUsed ul li {
   padding-right: 0.75rem;
 }
-.projects .wrapper .projectContainer .project1 .projectDesc .skillsUsed ul li i, .projects .wrapper .projectContainer .project3 .projectDesc .skillsUsed ul li i {
+.projects .wrapper .projectContainer .project1 .projectDesc .skillsUsed ul li i,
+.projects .wrapper .projectContainer .project3 .projectDesc .skillsUsed ul li i {
   font-size: 1.5rem;
 }
-.projects .wrapper .projectContainer .project1 .projectDesc .skillsUsed .projectBtn li a button, .projects .wrapper .projectContainer .project3 .projectDesc .skillsUsed .projectBtn li a button {
+.projects .wrapper .projectContainer .project1 .projectDesc .skillsUsed .projectBtn li a button,
+.projects .wrapper .projectContainer .project3 .projectDesc .skillsUsed .projectBtn li a button {
   border-radius: 5px;
 }
-.projects .wrapper .projectContainer .project1 .projectDesc .skillsUsed .projectBtn li a button:hover, .projects .wrapper .projectContainer .project3 .projectDesc .skillsUsed .projectBtn li a button:hover {
+.projects .wrapper .projectContainer .project1 .projectDesc .skillsUsed .projectBtn li a button:hover,
+.projects .wrapper .projectContainer .project3 .projectDesc .skillsUsed .projectBtn li a button:hover {
   background: #3f3f3f;
   color: rgb(228, 228, 228);
 }
-.projects .wrapper .projectContainer .project2 {
+.projects .wrapper .projectContainer .project2,
+.projects .wrapper .projectContainer .project4 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -867,18 +880,21 @@ header .wrapper {
   gap: 3rem;
   padding: 50px 0 50px;
 }
-.projects .wrapper .projectContainer .project2 .projectImg img {
+.projects .wrapper .projectContainer .project2 .projectImg img,
+.projects .wrapper .projectContainer .project4 .projectImg img {
   border: 5px solid #9e0020;
   height: 300px;
   max-width: 100%;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
-.projects .wrapper .projectContainer .project2 .projectImg img:hover {
+.projects .wrapper .projectContainer .project2 .projectImg img:hover,
+.projects .wrapper .projectContainer .project4 .projectImg img:hover {
   border: 5px solid #3f3f3f;
   scale: 0.95;
 }
-.projects .wrapper .projectContainer .project2 .projectDesc {
+.projects .wrapper .projectContainer .project2 .projectDesc,
+.projects .wrapper .projectContainer .project4 .projectDesc {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -892,17 +908,20 @@ header .wrapper {
   width: 55%;
   text-align: right;
 }
-.projects .wrapper .projectContainer .project2 .projectDesc h3 {
+.projects .wrapper .projectContainer .project2 .projectDesc h3,
+.projects .wrapper .projectContainer .project4 .projectDesc h3 {
   color: #9e0020;
   text-transform: uppercase;
   font-weight: bold;
   margin: 0;
 }
-.projects .wrapper .projectContainer .project2 .projectDesc p {
+.projects .wrapper .projectContainer .project2 .projectDesc p,
+.projects .wrapper .projectContainer .project4 .projectDesc p {
   line-height: 1.25;
   margin: 0;
 }
-.projects .wrapper .projectContainer .project2 .projectDesc .skillsUsed {
+.projects .wrapper .projectContainer .project2 .projectDesc .skillsUsed,
+.projects .wrapper .projectContainer .project4 .projectDesc .skillsUsed {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -914,22 +933,27 @@ header .wrapper {
       -ms-flex-align: center;
           align-items: center;
 }
-.projects .wrapper .projectContainer .project2 .projectDesc .skillsUsed ul {
+.projects .wrapper .projectContainer .project2 .projectDesc .skillsUsed ul,
+.projects .wrapper .projectContainer .project4 .projectDesc .skillsUsed ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   padding: 0;
 }
-.projects .wrapper .projectContainer .project2 .projectDesc .skillsUsed ul li {
+.projects .wrapper .projectContainer .project2 .projectDesc .skillsUsed ul li,
+.projects .wrapper .projectContainer .project4 .projectDesc .skillsUsed ul li {
   padding-left: 0.75rem;
 }
-.projects .wrapper .projectContainer .project2 .projectDesc .skillsUsed ul li i {
+.projects .wrapper .projectContainer .project2 .projectDesc .skillsUsed ul li i,
+.projects .wrapper .projectContainer .project4 .projectDesc .skillsUsed ul li i {
   font-size: 1.5rem;
 }
-.projects .wrapper .projectContainer .project2 .projectDesc .skillsUsed .projectBtn li a button {
+.projects .wrapper .projectContainer .project2 .projectDesc .skillsUsed .projectBtn li a button,
+.projects .wrapper .projectContainer .project4 .projectDesc .skillsUsed .projectBtn li a button {
   border-radius: 5px;
 }
-.projects .wrapper .projectContainer .project2 .projectDesc .skillsUsed .projectBtn li a button:hover {
+.projects .wrapper .projectContainer .project2 .projectDesc .skillsUsed .projectBtn li a button:hover,
+.projects .wrapper .projectContainer .project4 .projectDesc .skillsUsed .projectBtn li a button:hover {
   background: #3f3f3f;
   color: rgb(228, 228, 228);
 }
