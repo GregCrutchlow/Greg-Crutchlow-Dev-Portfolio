@@ -1075,7 +1075,10 @@ header .wrapper {
   header .headerContainer .headerText h2 {
     font-size: 2rem;
   }
-  .projects .wrapper .projectContainer .project1 .projectDesc .skillsUsed, .projects .wrapper .projectContainer .project2 .projectDesc .skillsUsed, .projects .wrapper .projectContainer .project3 .projectDesc .skillsUsed {
+  .projects .wrapper .projectContainer .project1 .projectDesc .skillsUsed,
+.projects .wrapper .projectContainer .project2 .projectDesc .skillsUsed,
+.projects .wrapper .projectContainer .project3 .projectDesc .skillsUsed,
+.projects .wrapper .projectContainer .project4 .projectDesc .skillsUsed {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1142,7 +1145,10 @@ header .wrapper {
   .contact .wrapper .contactFormContainer {
     width: 75%;
   }
-  .projects .wrapper .projectContainer .project1, .projects .wrapper .projectContainer .project2, .projects .wrapper .projectContainer .project3 {
+  .projects .wrapper .projectContainer .project1,
+.projects .wrapper .projectContainer .project2,
+.projects .wrapper .projectContainer .project3,
+.projects .wrapper .projectContainer .project4 {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1152,12 +1158,18 @@ header .wrapper {
             align-items: center;
     padding-right: 0;
   }
-  .projects .wrapper .projectContainer .project1 .projectDesc, .projects .wrapper .projectContainer .project2 .projectDesc, .projects .wrapper .projectContainer .project3 .projectDesc {
+  .projects .wrapper .projectContainer .project1 .projectDesc,
+.projects .wrapper .projectContainer .project2 .projectDesc,
+.projects .wrapper .projectContainer .project3 .projectDesc,
+.projects .wrapper .projectContainer .project4 .projectDesc {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
   }
-  .projects .wrapper .projectContainer .project1 .projectDesc p, .projects .wrapper .projectContainer .project2 .projectDesc p, .projects .wrapper .projectContainer .project3 .projectDesc p {
+  .projects .wrapper .projectContainer .project1 .projectDesc p,
+.projects .wrapper .projectContainer .project2 .projectDesc p,
+.projects .wrapper .projectContainer .project3 .projectDesc p,
+.projects .wrapper .projectContainer .project4 .projectDesc p {
     text-align: center;
   }
 }
@@ -1218,11 +1230,14 @@ header .wrapper {
   .about .wrapper .aboutMeContainer .aboutMeTalk h3 {
     font-size: 1.5rem;
   }
-  .projects .wrapper .projectContainer .project1 .projectDesc, .projects .wrapper .projectContainer .project2 .projectDesc, .projects .wrapper .projectContainer .project3 .projectDesc {
+  .projects .wrapper .projectContainer .project1 .projectDesc,
+.projects .wrapper .projectContainer .project2 .projectDesc,
+.projects .wrapper .projectContainer .project3 .projectDesc,
+.projects .wrapper .projectContainer .project4 .projectDesc {
     width: 80%;
   }
 }
-@media (max-width: 360px) {
+@media (max-width: 330px) {
   header .headerContainer .headerText .headerBtns {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1251,12 +1266,27 @@ header .wrapper {
   }
   .techStack {
     gap: 1.5rem;
-    width: 85%;
+    width: 95%;
   }
-  .projects .wrapper .projectContainer .project1 .projectImg img, .projects .wrapper .projectContainer .project2 .projectImg img, .projects .wrapper .projectContainer .project3 .projectImg img {
-    height: 200px;
+  .projects .wrapper .projectContainer {
+    width: 95%;
   }
-  .projects .wrapper .projectContainer .project1 .projectDesc .skillsUsed .projectBtn, .projects .wrapper .projectContainer .project2 .projectDesc .skillsUsed .projectBtn, .projects .wrapper .projectContainer .project3 .projectDesc .skillsUsed .projectBtn {
+  .projects .wrapper .projectContainer .project4 .projectImg img,
+.projects .wrapper .projectContainer .project1 .projectImg img,
+.projects .wrapper .projectContainer .project2 .projectImg img,
+.projects .wrapper .projectContainer .project3 .projectImg img {
+    height: 150px;
+  }
+  .projects .wrapper .projectContainer .project4 .projectDesc,
+.projects .wrapper .projectContainer .project1 .projectDesc,
+.projects .wrapper .projectContainer .project2 .projectDesc,
+.projects .wrapper .projectContainer .project3 .projectDesc {
+    width: 95%;
+  }
+  .projects .wrapper .projectContainer .project4 .projectDesc .skillsUsed .projectBtn,
+.projects .wrapper .projectContainer .project1 .projectDesc .skillsUsed .projectBtn,
+.projects .wrapper .projectContainer .project2 .projectDesc .skillsUsed .projectBtn,
+.projects .wrapper .projectContainer .project3 .projectDesc .skillsUsed .projectBtn {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1264,6 +1294,6 @@ header .wrapper {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    gap: 25px;
+    gap: 20px;
   }
 }
