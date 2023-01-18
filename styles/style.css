@@ -1097,82 +1097,89 @@ header .wrapper {
   }
 }
 @media (max-width: 760px) {
-  header {
-    height: 100%;
-  }
-  header .headerContainer {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
-  }
-  header .headerContainer .headerText .headerBtns {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  header .headerContainer .headerImg img {
-    margin: 75px 0;
-    height: 350px;
-  }
-  header .arrow {
+  .navBar .wrapper {
     display: none;
   }
-  .about .wrapper .aboutMeContainer {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .about .wrapper .aboutMeContainer .aboutMeTalk h3 {
-    font-size: 1.75rem;
-  }
-  .about .wrapper .aboutMeDetails {
-    gap: 25px;
-  }
-  .contact .wrapper {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .contact .wrapper .contactDetails {
-    width: 75%;
-  }
-  .contact .wrapper .contactFormContainer {
-    width: 75%;
-  }
-  .projects .wrapper .projectContainer .project1,
+}
+header {
+  height: 100%;
+}
+header .headerContainer {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+}
+header .headerContainer .headerText .headerBtns {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+header .headerContainer .headerImg img {
+  margin: 75px 0;
+  height: 350px;
+}
+header .arrow {
+  display: none;
+}
+
+.about .wrapper .aboutMeContainer {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.about .wrapper .aboutMeContainer .aboutMeTalk h3 {
+  font-size: 1.75rem;
+}
+.about .wrapper .aboutMeDetails {
+  gap: 25px;
+}
+
+.contact .wrapper {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.contact .wrapper .contactDetails {
+  width: 75%;
+}
+.contact .wrapper .contactFormContainer {
+  width: 75%;
+}
+
+.projects .wrapper .projectContainer .project1,
 .projects .wrapper .projectContainer .project2,
 .projects .wrapper .projectContainer .project3,
 .projects .wrapper .projectContainer .project4 {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    padding-right: 0;
-  }
-  .projects .wrapper .projectContainer .project1 .projectDesc,
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-right: 0;
+}
+.projects .wrapper .projectContainer .project1 .projectDesc,
 .projects .wrapper .projectContainer .project2 .projectDesc,
 .projects .wrapper .projectContainer .project3 .projectDesc,
 .projects .wrapper .projectContainer .project4 .projectDesc {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .projects .wrapper .projectContainer .project1 .projectDesc p,
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.projects .wrapper .projectContainer .project1 .projectDesc p,
 .projects .wrapper .projectContainer .project2 .projectDesc p,
 .projects .wrapper .projectContainer .project3 .projectDesc p,
 .projects .wrapper .projectContainer .project4 .projectDesc p {
-    text-align: center;
-  }
+  text-align: center;
 }
+
 @media (max-width: 480px) {
   .navBar .wrapper .hiddenNav .navLinks {
     margin-top: 3rem;
