@@ -59,6 +59,10 @@
 }
 
 @media (max-width: 760px) {
+    .navBar .wrapper {
+		display: none;
+			}
+		}
 	header {
 		height: 100%;
 		.headerContainer {
@@ -127,7 +131,7 @@
 			}
 		}
 	}
-}
+
 
 @media (max-width: 480px) {
 	.navBar .wrapper {
