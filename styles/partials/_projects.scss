@@ -75,6 +75,27 @@
 					}
 				}
 			}
+			.comingSoon {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+				z-index: 100;
+			}
+			.dimmed {
+				position: relative;
+			}
+			.dimmed:after {
+				content: "";
+				z-index: 10;
+				display: block;
+				position: absolute;
+				height: 100%;
+				top: 0;
+				right: 0;
+				left: 0;
+				background: rgba(211,211,211,0.75);
+			}
 			.project2,
 			.project4 {
 				display: flex;

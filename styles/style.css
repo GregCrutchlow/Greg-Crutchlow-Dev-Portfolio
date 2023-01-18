@@ -865,6 +865,36 @@ header .wrapper {
   background: #3f3f3f;
   color: rgb(228, 228, 228);
 }
+.projects .wrapper .projectContainer .comingSoon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: 100;
+}
+.projects .wrapper .projectContainer .dimmed {
+  position: relative;
+}
+.projects .wrapper .projectContainer .dimmed:after {
+  content: "";
+  z-index: 10;
+  display: block;
+  position: absolute;
+  height: 100%;
+  top: 0;
+  right: 0;
+  left: 0;
+  background: rgba(211, 211, 211, 0.75);
+}
 .projects .wrapper .projectContainer .project2,
 .projects .wrapper .projectContainer .project4 {
   display: -webkit-box;
