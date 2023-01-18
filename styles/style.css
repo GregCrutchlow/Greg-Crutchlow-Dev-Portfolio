@@ -1230,6 +1230,10 @@ header .wrapper {
   .about .wrapper .aboutMeContainer .aboutMeTalk h3 {
     font-size: 1.5rem;
   }
+  .techStack {
+    gap: 1.5rem;
+    width: 95%;
+  }
   .projects .wrapper .projectContainer .project1 .projectDesc,
 .projects .wrapper .projectContainer .project2 .projectDesc,
 .projects .wrapper .projectContainer .project3 .projectDesc,
