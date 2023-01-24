@@ -350,7 +350,8 @@ p {
   display: flex;
 }
 .navBar .navMenu .navItem {
-  margin-left: 1.5rem;
+  padding-left: 1.5rem;
+  text-transform: uppercase;
 }
 .navBar .navMenu .navItem a {
   color: white;
@@ -376,6 +377,7 @@ p {
           box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
 }
 
+/* From https://css.glass */
 header {
   height: 100vh;
   display: -webkit-box;
@@ -1099,6 +1101,9 @@ header .wrapper {
   }
 }
 @media (max-width: 960px) {
+  .navItem:nth-child(1) {
+    display: none;
+  }
   header .headerContainer .headerImg img {
     height: 300px;
   }
@@ -1109,9 +1114,57 @@ header .wrapper {
     gap: 75px;
   }
 }
-@media (max-width: 760px) {
-  .navBar {
-    display: none;
+@media (max-width: 768px) {
+  .navBar .hamburger {
+    display: block;
+  }
+  .navBar .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .navBar .hamburger.active .bar:nth-child(1) {
+    -webkit-transform: translateY(9px) rotate(45deg);
+            transform: translateY(9px) rotate(45deg);
+  }
+  .navBar .hamburger.active .bar:nth-child(3) {
+    -webkit-transform: translateY(-9px) rotate(-45deg);
+            transform: translateY(-9px) rotate(-45deg);
+  }
+  .navBar .navMenu {
+    position: fixed;
+    right: -100%;
+    top: 0;
+    gap: 0;
+    width: 50%;
+    height: 100%;
+    margin: 0;
+    padding: min(20vh, 2rem);
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    background: rgba(121, 38, 38, 0.1);
+    -webkit-backdrop-filter: blur(1rem);
+            backdrop-filter: blur(1rem);
+    -webkit-transition: 0.7s;
+    transition: 0.7s;
+  }
+  .navBar .navItem {
+    margin: 16px 0;
+    padding: 10px;
+    border-left: 2px solid white;
+    border-radius: 1px;
+  }
+  .navBar .navItem:nth-child(1) {
+    display: block;
+  }
+  .navBar .navMenu.active {
+    right: 0;
   }
   header {
     height: 100%;
@@ -1189,22 +1242,9 @@ header .wrapper {
     text-align: center;
   }
 }
-@media (max-width: 480px) {
-  .navBar .wrapper .hiddenNav .navLinks {
-    margin-top: 3rem;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    position: absolute;
-    right: 0;
-    top: 0;
-    background: #9e0020;
-    width: 50%;
-  }
-  .navBar .wrapper .hiddenNav .navLinks li {
-    margin-top: 1rem;
-    padding-bottom: 1rem;
+@media screen and (max-width: 480px) and (min-width: 360px) {
+  .navMenu {
+    min-width: 75%;
   }
   header {
     height: 100%;
@@ -1272,7 +1312,8 @@ header .wrapper {
     margin-top: 0.25rem;
   }
   header .headerContainer .headerImg img {
-    height: 250px;
+    height: 225px;
+    margin: 40px 0;
   }
   header .arrow {
     left: 47%;
@@ -1283,6 +1324,15 @@ header .wrapper {
   .about .wrapper .aboutMeContainer .aboutMeTalk h3 {
     font-size: 1.4rem;
     text-align: center;
+  }
+  .about .wrapper .aboutMeDetails {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    margin-top: 15px;
+  }
+  .about .wrapper .aboutMeDetails h5, .about .wrapper .aboutMeDetails p {
+    margin: 5px;
   }
   .techStack {
     gap: 1.5rem;

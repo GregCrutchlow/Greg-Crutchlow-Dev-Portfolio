@@ -27,7 +27,8 @@
 	.navMenu {
 		display: flex;
 		.navItem {
-			margin-left: 1.5rem;
+			padding-left: 1.5rem;
+			text-transform: uppercase;
 			a {
 				color: white;
 			}
@@ -53,3 +54,11 @@
 	background: $crimson;
 	box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
 }
+
+// for slide out menu on mobile
+/* From https://css.glass */
+// background: rgba(144, 144, 144, 0.09);
+// border-radius: 16px;
+// box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+// backdrop-filter: blur(5.1px);
+// -webkit-backdrop-filter: blur(5.1px);

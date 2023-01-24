@@ -12,16 +12,44 @@ portfolio.navBarToggle = () => {
     })
 }
 
-// portfolio.easterEgg = () => {
-//     const profilePic = document.querySelector(".headerImg");
+portfolio.hamburgerMenu = () => {
+    const hamburger = document.querySelector(".hamburger")
+    const navMenu = document.querySelector(".navMenu")
 
-//     profilePic.addEventListener('click', function () {
-//         if (profilePic.)
-//     })
-// }
+    hamburger.addEventListener("click", () => {
+        hamburger.classList.toggle("active")
+        navMenu.classList.toggle("active")
+    })
+
+    document.querySelectorAll(".navLink" && ".navItem").forEach((n) =>
+        n.addEventListener("click", () => {
+            hamburger.classList.remove("active")
+            navMenu.classList.remove("active")
+        })
+    )
+
+    window.addEventListener('click', function () {
+        hamburger.classList.remove("active")
+        navMenu.classList.remove("active")
+    })
+
+    hamburger.addEventListener("click", function (e) {
+		e.stopPropagation()
+	})
+
+	navMenu.addEventListener("click", function (e) {
+		e.stopPropagation()
+	})
+}
+// portfolio.projects = [
+//     {
+
+//     }
+// ]
 
 portfolio.init = () => {
     portfolio.navBarToggle();
+    portfolio.hamburgerMenu();
 }
 
 portfolio.init();
