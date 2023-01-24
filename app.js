@@ -12,6 +12,14 @@ portfolio.navBarToggle = () => {
     })
 }
 
+// portfolio.easterEgg = () => {
+//     const profilePic = document.querySelector(".headerImg");
+
+//     profilePic.addEventListener('click', function () {
+//         if (profilePic.)
+//     })
+// }
+
 portfolio.init = () => {
     portfolio.navBarToggle();
 }
