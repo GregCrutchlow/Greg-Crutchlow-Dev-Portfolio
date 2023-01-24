@@ -1,10 +1,11 @@
 const portfolio = {};
+const darkMode = document.querySelector("darkBtn");
 
 portfolio.navBarToggle = () => {
     const navBar = document.querySelector(".navBar");
 
     window.addEventListener('scroll', function () {
-        if (this.window.scrollY > navBar.clientHeight + 750) {
+        if (this.window.scrollY > navBar.clientHeight + 200) {
             navBar.classList.add('scrolled')
         } else {
             navBar.classList.remove('scrolled')
@@ -41,15 +42,42 @@ portfolio.hamburgerMenu = () => {
 		e.stopPropagation()
 	})
 }
-// portfolio.projects = [
-//     {
 
-//     }
-// ]
+portfolio.profilePic = () => {
+    const profile = document.querySelector(".headerProfilePic")
+
+    profile.addEventListener("click", () => {
+        profile.classList.toggle("egg")
+    })
+}
+
+portfolio.darkMode = () => {
+    // const detect = window.matchMedia("(prefers-color-scheme: dark)")
+    const darkBtn = document.querySelector(".darkBtn");
+    const body = document.querySelector("main");
+    const header = document.querySelector("header")
+    const contact = document.querySelector("#contact")
+    const footer = document.querySelector("footer")
+    const nav = document.querySelector(".navBar")
+    const tech = document.querySelector("#skills")
+
+    // console.log(detect);
+
+    darkBtn.addEventListener("click", () => {
+        body.classList.toggle("darkMode");
+        header.classList.toggle("headerDarkMode");
+        footer.classList.toggle("darkMode");
+        contact.classList.toggle("contactDarkMode");
+        nav.classList.toggle("navBarDarkMode");
+        tech.classList.toggle("techDarkMode");
+	})
+}
 
 portfolio.init = () => {
     portfolio.navBarToggle();
     portfolio.hamburgerMenu();
+    portfolio.profilePic();
+    portfolio.darkMode();
 }
 
 portfolio.init();

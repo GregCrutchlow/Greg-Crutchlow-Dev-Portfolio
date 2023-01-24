@@ -11,6 +11,7 @@ body {
     overflow-x: hidden;
 }
 
+
 .wrapper {
     margin: 0 auto;
     max-width: 1250px;
@@ -43,3 +44,16 @@ button {
 section {
     padding-top: 3rem;
 }
+
+.darkMode {
+    background: #171717;
+    color: #EDEDED;
+    transition: 0.3s ease-in-out;
+}
+
+// @media (prefers-color-scheme: dark) {
+//     body {
+//         background: #171717;
+//         color: #ededed;
+//     }
+// }
