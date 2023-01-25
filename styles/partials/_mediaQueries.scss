@@ -1,6 +1,21 @@
 @use "./variables" as *;
 
-@media (max-width: 1250px) {
+@media screen and (max-width: 1500px) {
+	.wrapper {
+		width: 80%;
+	}
+	header {
+		.headerContainer {
+			.headerText {
+				h1 {
+					font-size: 3rem;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 1250px) {
 	header {
 		.headerContainer {
 			.headerText {
@@ -31,7 +46,7 @@
 	}
 }
 
-@media (max-width: 960px) {
+@media screen and (max-width: 960px) {
 	
 	header {
 		.headerContainer {
@@ -59,7 +74,7 @@
 	}
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .navBar {
         .hamburger {
         display: block;
@@ -241,7 +256,7 @@
 	}
 }
 
-@media (max-width: 330px) {
+@media screen and (max-width: 330px) {
 	
 	header {
 		.headerContainer {
