@@ -47,13 +47,7 @@ section {
 
 .darkMode {
     background: #171717;
-    color: #EDEDED;
-    transition: 0.3s ease-in-out;
+    color: $white;
+    // transition: 0.3s ease-in-out;
 }
 
-// @media (prefers-color-scheme: dark) {
-//     body {
-//         background: #171717;
-//         color: #ededed;
-//     }
-// }
