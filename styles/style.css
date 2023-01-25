@@ -391,7 +391,7 @@ p {
   background: #9e0020;
 }
 
-.navBarDarkMode {
+.scrolledDark {
   background: #171717;
 }
 
@@ -1186,7 +1186,15 @@ header .wrapper {
           align-items: center;
 }
 
-@media (max-width: 1250px) {
+@media screen and (max-width: 1500px) {
+  .wrapper {
+    width: 80%;
+  }
+  header .headerContainer .headerText h1 {
+    font-size: 3rem;
+  }
+}
+@media screen and (max-width: 1250px) {
   header .headerContainer .headerText h1 {
     font-size: 4rem;
   }
@@ -1203,7 +1211,7 @@ header .wrapper {
             flex-direction: column;
   }
 }
-@media (max-width: 960px) {
+@media screen and (max-width: 960px) {
   header .headerContainer .headerImg img {
     height: 300px;
   }
@@ -1214,7 +1222,7 @@ header .wrapper {
     gap: 75px;
   }
 }
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .navBar .hamburger {
     display: block;
   }
@@ -1397,7 +1405,7 @@ header .wrapper {
     width: 80%;
   }
 }
-@media (max-width: 330px) {
+@media screen and (max-width: 330px) {
   header .headerContainer .headerText .headerBtns {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;

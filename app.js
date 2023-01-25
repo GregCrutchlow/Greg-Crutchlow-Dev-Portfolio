@@ -3,12 +3,19 @@ const darkMode = document.querySelector("darkBtn");
 
 portfolio.navBarToggle = () => {
     const navBar = document.querySelector(".navBar");
+    const header = document.querySelector("header");
 
     window.addEventListener('scroll', function () {
         if (this.window.scrollY > navBar.clientHeight + 200) {
-            navBar.classList.add('scrolled')
+			navBar.classList.add("scrolled")
+		} else {
+			navBar.classList.remove("scrolled")
+		}
+    }) || window.addEventListener('scroll', function () {
+        if (header.classList.contains("headerDarkMode") && (this.window.scrollY > navBar.clientHeight + 200)) {
+            navBar.classList.add("scrolledDark")
         } else {
-            navBar.classList.remove('scrolled')
+            navBar.classList.remove("scrolledDark")
         }
     })
 }
@@ -35,11 +42,11 @@ portfolio.hamburgerMenu = () => {
     })
 
     hamburger.addEventListener("click", function (e) {
-		e.stopPropagation()
+		e.stopPropagation();
 	})
 
 	navMenu.addEventListener("click", function (e) {
-		e.stopPropagation()
+        e.stopPropagation()
 	})
 }
 
