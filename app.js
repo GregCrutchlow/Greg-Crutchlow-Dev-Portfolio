@@ -10,6 +10,7 @@ portfolio.navBarToggle = () => {
         } else {
             navBar.classList.remove('scrolled')
         }
+
     })
 }
 
