@@ -32,6 +32,7 @@
 }
 
 @media (max-width: 960px) {
+	
 	header {
 		.headerContainer {
 			.headerImg {
@@ -58,9 +59,52 @@
 	}
 }
 
-@media (max-width: 760px) {
+@media (max-width: 768px) {
     .navBar {
-        display: none;
+        .hamburger {
+        display: block;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(9px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-9px) rotate(-45deg);
+    }
+
+    .navMenu {
+        position: fixed;
+        right: -100%;
+        top: 0;
+        gap: 0;
+        width: 50%;
+		height: 100%;
+		margin: 0;
+		padding: min(20vh, 2rem);
+        flex-direction: column;
+        justify-content: flex-start;
+		align-items: flex-start;
+        background: rgba(121, 38, 38, 0.1);
+		backdrop-filter: blur(1rem);
+        transition: 0.7s;
+    }
+
+    .navItem {
+        margin: 16px 0;
+		padding: 10px;
+		border-left: 2px solid white;
+		border-radius: 1px;
+    }
+	.navItem:nth-child(1) {
+		display: block;
+	}
+    .navMenu.active {
+        right: 0;
+    }
+	
     }
 	header {
 		height: 100%;
@@ -130,29 +174,15 @@
 			}
 		}
 	}
+	
 }
 
-@media (max-width: 480px) {
-	.navBar .wrapper {
-		.hiddenNav {
-			.navLinks {
-				margin-top: 3rem;
-				flex-direction: column;
-				position: absolute;
-				right: 0;
-				top: 0;
-				background: $crimson;
-				width: 50%;
-				li {
-					margin-top: 1rem;
-					padding-bottom: 1rem;
-				}
-			}
-		}
+@media screen and (max-width: 480px) and (min-width: 360px) {
+	.navMenu {
+		min-width: 75%;
 	}
 	header {
 		height: 100%;
-
 		.headerContainer {
 			.headerText {
 				h1 {
@@ -212,8 +242,7 @@
 }
 
 @media (max-width: 330px) {
-	.navBar {
-	}
+	
 	header {
 		.headerContainer {
 			.headerText {
@@ -228,7 +257,8 @@
 			}
 			.headerImg {
 				img {
-					height: 250px;
+					height: 225px;
+					margin: 40px 0;
 				}
 			}
 		}
@@ -245,6 +275,13 @@
 						font-size: 1.4rem;
 						text-align: center;
 					}
+				}
+			}
+			.aboutMeDetails {
+				justify-content: flex-start;
+				margin-top: 15px;
+				h5, p {
+					margin: 5px;
 				}
 			}
 		}
