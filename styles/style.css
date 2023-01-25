@@ -653,7 +653,7 @@ header .wrapper {
   margin-bottom: 1rem;
   border-radius: 50px;
 }
-.about .wrapper .aboutMeContainer .aboutMeTalk span {
+.about .wrapper .aboutMeContainer .aboutMeTalk .name {
   border-bottom: 2px solid #9e0020;
   font-weight: bold;
 }
@@ -697,14 +697,14 @@ header .wrapper {
 .aboutDark .aboutMeTitle h4 {
   background-color: #3f3f3f;
 }
-.aboutDark .aboutMeContainer .aboutMeTalk h3 {
-  color: #e4e4e4;
-}
 .aboutDark .aboutMeDetails .aboutName h5, .aboutDark .aboutMeDetails .aboutEmail h5, .aboutDark .aboutMeDetails .aboutFrom h5 {
   color: #e4e4e4;
 }
-.aboutDark .about .wrapper .aboutMeContainer .aboutMeGraphic img {
-  border: 5px solid white;
+.aboutDark .aboutMeGraphic img {
+  border: 5px solid #e4e4e4;
+}
+.aboutDark .aboutMeTalk #hi {
+  color: #e4e4e4;
 }
 
 .skills {
@@ -852,7 +852,7 @@ header .wrapper {
 .projects .wrapper .projectContainer .project3 .projectImg img {
   border: 5px solid #9e0020;
   height: 300px;
-  max-width: 100%;
+  width: 100%;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
@@ -972,7 +972,7 @@ header .wrapper {
 .projects .wrapper .projectContainer .project4 .projectImg img {
   border: 5px solid #9e0020;
   height: 300px;
-  max-width: 100%;
+  width: 100%;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
@@ -1188,7 +1188,7 @@ header .wrapper {
 
 @media screen and (max-width: 1500px) {
   .wrapper {
-    width: 80%;
+    width: 90%;
   }
   header .headerContainer .headerText h1 {
     font-size: 3rem;
@@ -1306,6 +1306,9 @@ header .wrapper {
   }
   .about .wrapper .aboutMeDetails {
     gap: 25px;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
   }
   .contact .wrapper {
     -webkit-box-orient: vertical;
@@ -1350,7 +1353,7 @@ header .wrapper {
     text-align: center;
   }
 }
-@media screen and (max-width: 480px) and (min-width: 360px) {
+@media screen and (max-width: 480px) {
   .navMenu {
     min-width: 75%;
   }
@@ -1389,23 +1392,98 @@ header .wrapper {
             flex-direction: column;
   }
   .about .wrapper .aboutMeContainer .aboutMeTalk {
-    width: 75%;
+    width: 90%;
   }
   .about .wrapper .aboutMeContainer .aboutMeTalk h3 {
     font-size: 1.5rem;
   }
   .techStack {
     gap: 1.5rem;
-    width: 95%;
+    width: 101%;
+  }
+  .projects .wrapper .projectContainer .project1 .projectImg img,
+.projects .wrapper .projectContainer .project2 .projectImg img,
+.projects .wrapper .projectContainer .project3 .projectImg img,
+.projects .wrapper .projectContainer .project4 .projectImg img {
+    width: 100%;
+    height: 200px;
+    aspect-ratio: 16/9;
   }
   .projects .wrapper .projectContainer .project1 .projectDesc,
 .projects .wrapper .projectContainer .project2 .projectDesc,
 .projects .wrapper .projectContainer .project3 .projectDesc,
 .projects .wrapper .projectContainer .project4 .projectDesc {
-    width: 80%;
+    width: 90%;
   }
 }
-@media screen and (max-width: 330px) {
+@media (max-width: 360px) {
+  header .headerContainer .headerImg .headerProfilePic {
+    height: 300px;
+    margin: 25px 0;
+  }
+  .about {
+    width: 100%;
+  }
+  .about .aboutMeTitle {
+    margin-top: 0;
+  }
+  .about .aboutMeTitle h2 {
+    font-size: 2rem;
+  }
+  .about .aboutMeTalk h3 {
+    font-size: 1.25rem;
+  }
+  .projects .wrapper .projectContainer .comingSoon h2 {
+    font-size: 3rem;
+  }
+  .projects .wrapper .projectContainer .comingSoon p {
+    text-align: center;
+  }
+  .projects .wrapper .projectContainer .comingSoon .dimmed {
+    -webkit-transform: blur(1);
+            transform: blur(1);
+  }
+  .projects .wrapper .projectContainer .project1 .projectImg img,
+.projects .wrapper .projectContainer .project2 .projectImg img,
+.projects .wrapper .projectContainer .project3 .projectImg img,
+.projects .wrapper .projectContainer .project4 .projectImg img {
+    width: 100%;
+    height: 150px;
+    aspect-ratio: 16/9;
+  }
+  .projects .wrapper .projectContainer .project1 .projectDesc,
+.projects .wrapper .projectContainer .project2 .projectDesc,
+.projects .wrapper .projectContainer .project3 .projectDesc,
+.projects .wrapper .projectContainer .project4 .projectDesc {
+    width: 100%;
+  }
+  .projects .wrapper .projectContainer .project1 .projectDesc .skillsUsed ul li,
+.projects .wrapper .projectContainer .project2 .projectDesc .skillsUsed ul li,
+.projects .wrapper .projectContainer .project3 .projectDesc .skillsUsed ul li,
+.projects .wrapper .projectContainer .project4 .projectDesc .skillsUsed ul li {
+    padding: 5px;
+  }
+  .projects .wrapper .projectContainer .project1 .projectDesc .skillsUsed .projectBtn,
+.projects .wrapper .projectContainer .project2 .projectDesc .skillsUsed .projectBtn,
+.projects .wrapper .projectContainer .project3 .projectDesc .skillsUsed .projectBtn,
+.projects .wrapper .projectContainer .project4 .projectDesc .skillsUsed .projectBtn {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 10px 0;
+  }
+  .projects .wrapper .projectContainer .project1 .projectDesc .skillsUsed .projectBtn button,
+.projects .wrapper .projectContainer .project2 .projectDesc .skillsUsed .projectBtn button,
+.projects .wrapper .projectContainer .project3 .projectDesc .skillsUsed .projectBtn button,
+.projects .wrapper .projectContainer .project4 .projectDesc .skillsUsed .projectBtn button {
+    width: 200px;
+  }
+}
+@media (max-width: 330px) {
   header .headerContainer .headerText .headerBtns {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1430,8 +1508,7 @@ header .wrapper {
     width: 90%;
   }
   .about .wrapper .aboutMeContainer .aboutMeTalk h3 {
-    font-size: 1.4rem;
-    text-align: center;
+    font-size: 2.5rem;
   }
   .about .wrapper .aboutMeDetails {
     -webkit-box-pack: start;

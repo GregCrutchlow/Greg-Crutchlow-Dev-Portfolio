@@ -68,7 +68,7 @@ portfolio.darkMode = () => {
     const footer = document.querySelector("footer")
     const nav = document.querySelector(".navBar")
     const tech = document.querySelector("#skills")
-    const about = document.querySelector("#about")
+    const about = document.querySelector(".about")
     const typo = document.querySelector("html")
     const project = document.querySelector("#projects")
 
@@ -100,3 +100,5 @@ portfolio.init = () => {
 }
 
 portfolio.init();
+
+// intersection observer CHECK THIS OUT
