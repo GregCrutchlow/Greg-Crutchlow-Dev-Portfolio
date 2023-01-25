@@ -61,16 +61,27 @@ portfolio.darkMode = () => {
     const footer = document.querySelector("footer")
     const nav = document.querySelector(".navBar")
     const tech = document.querySelector("#skills")
+    const about = document.querySelector("#about")
+    const typo = document.querySelector("html")
+    const project = document.querySelector("#projects")
 
     // console.log(detect);
 
     darkBtn.addEventListener("click", () => {
+        if (darkBtn.innerHTML === "Dark Mode") {
+            darkBtn.innerHTML = "Light Mode"
+        } else {
+            darkBtn.innerHTML = "Dark Mode"
+        }
         body.classList.toggle("darkMode");
         header.classList.toggle("headerDarkMode");
         footer.classList.toggle("darkMode");
         contact.classList.toggle("contactDarkMode");
         nav.classList.toggle("navBarDarkMode");
         tech.classList.toggle("techDarkMode");
+        about.classList.toggle("aboutDark")
+        typo.classList.toggle("darkTypo")
+        project.classList.toggle("darkProjects")
 	})
 }
 
