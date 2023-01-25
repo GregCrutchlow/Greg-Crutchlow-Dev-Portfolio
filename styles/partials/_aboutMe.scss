@@ -27,7 +27,7 @@
                     margin-bottom: 1rem;
                     border-radius: 50px;
                 }
-                span {
+                .name {
                     border-bottom: 2px solid $crimson;
                     font-weight: bold;
                 }
@@ -62,13 +62,15 @@
     .aboutMeTitle h4 {
         background-color: $dark;
     }
-    .aboutMeContainer .aboutMeTalk h3 {
-        color: $white;
-    } 
     .aboutMeDetails .aboutName  h5, .aboutMeDetails .aboutEmail h5, .aboutMeDetails .aboutFrom h5 {
         color: $white;
     }
-    .about .wrapper .aboutMeContainer .aboutMeGraphic img {
-        border: 5px solid white;
+    .aboutMeGraphic img {
+        border: 5px solid $white;
+    }
+    .aboutMeTalk {
+        #hi {
+            color: $white;
+        }
     }
 }

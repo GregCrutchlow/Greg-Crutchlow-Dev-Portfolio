@@ -2,7 +2,7 @@
 
 @media screen and (max-width: 1500px) {
 	.wrapper {
-		width: 80%;
+		width: 90%;
 	}
 	header {
 		.headerContainer {
@@ -154,9 +154,11 @@
 			}
 			.aboutMeDetails {
 				gap: 25px;
+				justify-content: flex-start;
 			}
 		}
 	}
+	
 	.contact {
 		.wrapper {
 			flex-direction: column;
@@ -192,7 +194,7 @@
 	
 }
 
-@media screen and (max-width: 480px) and (min-width: 360px) {
+@media screen and (max-width: 480px) {
 	.navMenu {
 		min-width: 75%;
 	}
@@ -228,7 +230,7 @@
 			.aboutMeContainer {
 				flex-direction: column;
 				.aboutMeTalk {
-					width: 75%;
+					width: 90%;
 					h3 {
 						font-size: 1.5rem;
 					}
@@ -238,7 +240,7 @@
 	}
     .techStack {
 		gap: 1.5rem;
-		width: 95%;
+		width: 101%;
 	}
 	.projects {
 		.wrapper {
@@ -247,8 +249,15 @@
 				.project2,
 				.project3,
                 .project4 {
+					.projectImg {
+						img {
+							width: 100%;
+							height: 200px;
+							aspect-ratio: 16 / 9;
+						}
+					}
 					.projectDesc {
-						width: 80%;
+						width: 90%;
 					}
 				}
 			}
@@ -256,7 +265,75 @@
 	}
 }
 
-@media screen and (max-width: 330px) {
+@media (max-width: 360px){
+	header .headerContainer .headerImg .headerProfilePic {
+		height: 300px;
+		margin: 25px 0;
+	}
+	.about {
+		width: 100%;
+		.aboutMeTitle {
+			margin-top: 0;
+			h2 {
+				font-size: 2rem;
+			}
+		}
+		.aboutMeTalk h3 {
+			font-size: 1.25rem;
+		}
+	}
+	.projects {
+		.wrapper {
+			.projectContainer {
+				.comingSoon{
+					h2{
+						font-size: 3rem;
+					}
+					p {
+						text-align: center;
+					}
+					.dimmed {
+						transform: blur(1);
+					}
+				}
+				.project1,
+				.project2,
+				.project3,
+                .project4 {
+					.projectImg {
+						img {
+							width: 100%;
+							height: 150px;
+							aspect-ratio: 16 / 9;
+						}
+					}
+					.projectDesc {
+						width: 100%;
+						.skillsUsed {
+							ul {
+								li {
+									
+									padding: 5px;
+									
+								}
+							}
+							.projectBtn {
+								flex-direction: column;
+								align-items: center;
+								gap: 10px 0;
+								button {
+									width: 200px;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 330px) {
 	
 	header {
 		.headerContainer {
@@ -287,8 +364,9 @@
 				.aboutMeTalk {
 					width: 90%;
 					h3 {
-						font-size: 1.4rem;
-						text-align: center;
+						font-size: 2.5rem;
+						
+						// text-align: center;
 					}
 				}
 			}
