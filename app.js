@@ -11,6 +11,7 @@ portfolio.observer = () => {
         if (header.classList.contains("headerDarkMode")) {
             navBar.classList.toggle("scrolledDark")
         }
+
     }
 
     const navOptions = {
@@ -20,6 +21,7 @@ portfolio.observer = () => {
     const navObs = new IntersectionObserver(navCallback, navOptions)
 
     navObs.observe(header)
+    })
 }
 
 // mobile hamburger menu controls
