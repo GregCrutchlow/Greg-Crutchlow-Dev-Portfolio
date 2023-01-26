@@ -21,8 +21,8 @@ portfolio.observer = () => {
     const navObs = new IntersectionObserver(navCallback, navOptions)
 
     navObs.observe(header)
-    })
 }
+
 
 // mobile hamburger menu controls
 portfolio.hamburgerMenu = () => {
