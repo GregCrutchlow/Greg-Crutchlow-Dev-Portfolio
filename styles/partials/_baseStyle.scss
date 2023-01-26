@@ -46,8 +46,26 @@ section {
 }
 
 .darkMode {
-    background: #171717;
+    background: $black;
     color: $white;
-    // transition: 0.3s ease-in-out;
+    .aboutMeTitle h4 {
+        background-color: $dark;
+    }
+    .aboutMeDetails .aboutName  h5, .aboutMeDetails .aboutEmail h5, .aboutMeDetails .aboutFrom h5 {
+        color: $white;
+    }
+    .aboutMeGraphic img {
+        border: 5px solid $white;
+    }
+    .aboutMeTalk {
+        #hi {
+            color: $white;
+        }
+    }
+    footer {
+        .backUp {
+            background: $black;
+        }
+    }
 }
 

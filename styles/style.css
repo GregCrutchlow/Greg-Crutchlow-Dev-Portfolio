@@ -282,6 +282,21 @@ section {
   background: #171717;
   color: #e4e4e4;
 }
+.darkMode .aboutMeTitle h4 {
+  background-color: #3f3f3f;
+}
+.darkMode .aboutMeDetails .aboutName h5, .darkMode .aboutMeDetails .aboutEmail h5, .darkMode .aboutMeDetails .aboutFrom h5 {
+  color: #e4e4e4;
+}
+.darkMode .aboutMeGraphic img {
+  border: 5px solid #e4e4e4;
+}
+.darkMode .aboutMeTalk #hi {
+  color: #e4e4e4;
+}
+.darkMode footer .backUp {
+  background: #171717;
+}
 
 html {
   font-family: "PT Sans Caption", sans-serif;
@@ -509,6 +524,24 @@ header .headerContainer .headerImg .egg {
 header .headerContainer .headerImg h4 {
   display: none;
 }
+header .headerContainer .socialLinks ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
+}
+header .headerContainer .socialLinks ul li {
+  margin-right: 1rem;
+  font-size: 2rem;
+}
+header .headerContainer .socialLinks ul li a {
+  color: #e4e4e4;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+header .headerContainer .socialLinks ul li a:hover {
+  color: #3f3f3f;
+}
 header .arrow {
   color: #e4e4e4;
   position: absolute;
@@ -689,22 +722,6 @@ header .wrapper {
 .about .wrapper .aboutMeDetails h5 {
   font-weight: bold;
   color: grey;
-}
-
-.aboutDark {
-  color: #e4e4e4;
-}
-.aboutDark .aboutMeTitle h4 {
-  background-color: #3f3f3f;
-}
-.aboutDark .aboutMeDetails .aboutName h5, .aboutDark .aboutMeDetails .aboutEmail h5, .aboutDark .aboutMeDetails .aboutFrom h5 {
-  color: #e4e4e4;
-}
-.aboutDark .aboutMeGraphic img {
-  border: 5px solid #e4e4e4;
-}
-.aboutDark .aboutMeTalk #hi {
-  color: #e4e4e4;
 }
 
 .skills {
@@ -1049,10 +1066,10 @@ header .wrapper {
   padding-bottom: 50px;
 }
 
-.darkProjects h4 {
+.darkProjects .projects h4 {
   background-color: #3f3f3f;
 }
-.darkProjects h3 {
+.darkProjects .projects h3 {
   color: #e4e4e4;
 }
 
@@ -1174,7 +1191,33 @@ header .wrapper {
   background-size: cover;
 }
 
-.copyright {
+footer {
+  position: relative;
+}
+footer .backToTop {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+footer .backToTop button {
+  position: absolute;
+  bottom: 75px;
+  width: 250px;
+  height: 30px;
+  margin: 0;
+  padding: 0;
+  border-right: 0;
+  border-top-right-radius: 50px;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  background: #e4e4e4;
+  color: #171717;
+}
+footer .copyright {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

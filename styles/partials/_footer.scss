@@ -1,7 +1,32 @@
 @use "./variables" as *;
 
-.copyright {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+footer {
+    position: relative;
+    .backToTop {
+        display: flex;
+        justify-content: center;
+        
+        button {
+            position: absolute;
+            bottom: 75px;
+            width: 250px;
+            height: 30px;
+            margin: 0;
+            padding: 0;
+            border-right: 0;
+            border-top-right-radius: 50px;
+            border-top-left-radius: 50px;
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;
+            background: $white;
+            color: $black;
+        }
+    }
+    
+    .copyright {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
