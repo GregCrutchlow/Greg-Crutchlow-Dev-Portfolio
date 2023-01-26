@@ -66,25 +66,25 @@
 					outline: none;
 				}
 				button {
-					background: $dark;
-					color: $white;
+					background: $white;
+					color: $dark;
 					display: flex;
 					justify-content: center;
 					i {
 						margin-left: 1rem;
-						border: 2px solid $white;
+						border: 2px solid $dark;
 						border-radius: 50%;
 						padding: 3px;
 						font-size: 0.75rem;
 					}
 					&:hover {
-						background: $white;
-						color: $crimson;
+						background: $dark;
+						color: $white;
 						transition: all 0.2s ease-in-out;
 					}
 					&:focus {
-						background: $white;
-						color: $crimson;
+						background: $dark;
+						color: $white;
 						transition: all 0.2s ease-in-out;
 					}
 				}

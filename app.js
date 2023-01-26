@@ -1,26 +1,30 @@
 const portfolio = {};
 const darkMode = document.querySelector("darkBtn");
+const navBar = document.querySelector(".navBar")
+const header = document.querySelector("header")
 
-portfolio.navBarToggle = () => {
-    const navBar = document.querySelector(".navBar");
-    const header = document.querySelector("header");
+// For nav bar background pop in based on what area you've scrolled to
+portfolio.observer = () => {
 
-    window.addEventListener('scroll', function () {
-        if (this.window.scrollY > navBar.clientHeight + 200) {
-			navBar.classList.add("scrolled")
-		} else {
-			navBar.classList.remove("scrolled")
-		}
-    }) || window.addEventListener('scroll', function () {
-        if (header.classList.contains("headerDarkMode") && (this.window.scrollY > navBar.clientHeight + 200)) {
-            navBar.classList.add("scrolledDark")
-        } else {
-            navBar.classList.remove("scrolledDark")
+    function navCallback(entries) {
+        navBar.classList.toggle("scrolled", !entries[0].isIntersecting)
+        if (header.classList.contains("headerDarkMode")) {
+            navBar.classList.toggle("scrolledDark")
         }
 
+    }
+
+    const navOptions = {
+        threshold: .25,
+    }
+
+    const navObs = new IntersectionObserver(navCallback, navOptions)
+
+    navObs.observe(header)
     })
 }
 
+// mobile hamburger menu controls
 portfolio.hamburgerMenu = () => {
     const hamburger = document.querySelector(".hamburger")
     const navMenu = document.querySelector(".navMenu")
@@ -51,6 +55,7 @@ portfolio.hamburgerMenu = () => {
 	})
 }
 
+// simple easter egg to spin header profil picture
 portfolio.profilePic = () => {
     const profile = document.querySelector(".headerProfilePic")
 
@@ -59,6 +64,7 @@ portfolio.profilePic = () => {
     })
 }
 
+// dark mode toggle, need to refine
 portfolio.darkMode = () => {
     // const detect = window.matchMedia("(prefers-color-scheme: dark)")
     const darkBtn = document.querySelector(".darkBtn");
@@ -72,8 +78,6 @@ portfolio.darkMode = () => {
     const typo = document.querySelector("html")
     const project = document.querySelector("#projects")
 
-    // console.log(detect);
-
     darkBtn.addEventListener("click", () => {
         if (darkBtn.innerHTML === "Dark Mode") {
             darkBtn.innerHTML = "Light Mode"
@@ -82,7 +86,7 @@ portfolio.darkMode = () => {
         }
         body.classList.toggle("darkMode");
         header.classList.toggle("headerDarkMode");
-        footer.classList.toggle("darkMode");
+        footer.classList.toggle("footerDarkMode");
         contact.classList.toggle("contactDarkMode");
         nav.classList.toggle("navBarDarkMode");
         tech.classList.toggle("techDarkMode");
@@ -92,13 +96,14 @@ portfolio.darkMode = () => {
 	})
 }
 
+// this adds in all functions to be called when portfolio is called
 portfolio.init = () => {
-    portfolio.navBarToggle();
+    portfolio.observer();
     portfolio.hamburgerMenu();
     portfolio.profilePic();
     portfolio.darkMode();
 }
 
+// this initializes all functions within portfolio function
 portfolio.init();
 
-// intersection observer CHECK THIS OUT
