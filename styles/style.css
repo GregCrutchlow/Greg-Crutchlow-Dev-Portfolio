@@ -1174,7 +1174,35 @@ header .wrapper {
   background-size: cover;
 }
 
-.copyright {
+footer {
+  position: relative;
+}
+footer .backToTop {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+footer .backToTop button {
+  position: absolute;
+  bottom: 75px;
+  width: 250px;
+  height: 40px;
+  margin: 0;
+  padding: 0;
+  border-right: 0;
+  border-top-right-radius: 50px;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  background: #e4e4e4;
+}
+footer .backToTop button a {
+  color: #171717;
+}
+footer .copyright {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
