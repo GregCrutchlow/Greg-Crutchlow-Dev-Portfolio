@@ -1190,6 +1190,15 @@ header .wrapper {
   background-attachment: fixed;
   background-size: cover;
 }
+.contactDarkMode i:hover {
+  color: #3f3f3f;
+}
+.contactDarkMode .contactForm .btn i {
+  color: #3f3f3f;
+}
+.contactDarkMode .contactForm .btn:hover {
+  color: #e4e4e4;
+}
 
 footer {
   position: relative;
