@@ -57,20 +57,3 @@
     }
 } 
 
-.aboutDark {
-    color: $white;
-    .aboutMeTitle h4 {
-        background-color: $dark;
-    }
-    .aboutMeDetails .aboutName  h5, .aboutMeDetails .aboutEmail h5, .aboutMeDetails .aboutFrom h5 {
-        color: $white;
-    }
-    .aboutMeGraphic img {
-        border: 5px solid $white;
-    }
-    .aboutMeTalk {
-        #hi {
-            color: $white;
-        }
-    }
-}

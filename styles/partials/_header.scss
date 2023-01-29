@@ -75,6 +75,24 @@ header {
 		.headerImg h4 {
 			display: none;
 		}
+		.socialLinks {
+			ul {
+				display: flex;
+				padding: 0;
+				li {
+					margin-right: 1rem;
+					font-size: 2rem;
+					a {
+						color: $white;
+						transition: all 0.2s ease-in-out;
+
+					}
+					a:hover {
+						color: $dark;
+					}
+				}
+			}
+		}
 	}
 
 	.arrow {

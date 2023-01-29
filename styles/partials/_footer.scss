@@ -6,11 +6,12 @@ footer {
     .backToTop {
         display: flex;
         justify-content: center;
+        
         button {
             position: absolute;
             bottom: 75px;
             width: 250px;
-            height: 40px;
+            height: 30px;
             margin: 0;
             padding: 0;
             border-right: 0;
@@ -19,10 +20,7 @@ footer {
             border-bottom-left-radius: 0;
             border-bottom-right-radius: 0;
             background: $white;
-            a {
-                color: $black;
-
-            }
+            color: $black;
         }
     }
     
