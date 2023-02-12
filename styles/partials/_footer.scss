@@ -30,3 +30,11 @@ footer {
         align-items: center;
     }
 }
+.footerDarkMode {
+    background: $black;
+    color: $white;
+    .backUp {
+        background: $black;
+        color: $white;
+    }
+}

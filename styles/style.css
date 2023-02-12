@@ -1185,8 +1185,8 @@ header .wrapper {
   outline: none;
 }
 .contact .wrapper .contactFormContainer .contactForm button {
-  background: #3f3f3f;
-  color: #e4e4e4;
+  background: #e4e4e4;
+  color: #3f3f3f;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1196,20 +1196,20 @@ header .wrapper {
 }
 .contact .wrapper .contactFormContainer .contactForm button i {
   margin-left: 1rem;
-  border: 2px solid #e4e4e4;
+  border: 2px solid #3f3f3f;
   border-radius: 50%;
   padding: 3px;
   font-size: 0.75rem;
 }
 .contact .wrapper .contactFormContainer .contactForm button:hover {
-  background: #e4e4e4;
-  color: #9e0020;
+  background: #3f3f3f;
+  color: #e4e4e4;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
 .contact .wrapper .contactFormContainer .contactForm button:focus {
-  background: #e4e4e4;
-  color: #9e0020;
+  background: #3f3f3f;
+  color: #e4e4e4;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
@@ -1259,6 +1259,7 @@ footer .copyright {
           align-items: center;
 }
 
+
 .modal {
   margin: auto;
   position: fixed;
@@ -1304,6 +1305,15 @@ footer .copyright {
   -webkit-backdrop-filter: blur(3px);
           backdrop-filter: blur(3px);
   z-index: 5;
+
+.footerDarkMode {
+  background: #171717;
+  color: #e4e4e4;
+}
+.footerDarkMode .backUp {
+  background: #171717;
+  color: #e4e4e4;
+
 }
 
 @media screen and (max-width: 1500px) {
