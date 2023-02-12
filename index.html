@@ -68,8 +68,7 @@
                     <h1>A Front-End <br>Web Dev</h1>
                     <div class="headerBtns">
                         <a href="#projects"><button class='headerButton'>View My Works</button></a>
-                        <a href="#contact"><button class="headerClearBtn">Contact Me<i
-                                    class="fa-solid fa-arrow-down"></i></button></a>
+                        <a href="#contact"><button class="headerClearBtn">Contact Me</button></a>
                     </div>
                     <div class="socialLinks">
                         <ul>
@@ -82,9 +81,9 @@
                         </ul>
                     </div>
                 </div>
-                <div class="headerImg">
+                <!-- <div class="headerImg">
                     <img class="headerProfilePic" src="./assets/gregProfilePic.webp" alt="Profile Picture of Greg">
-                </div>
+                </div> -->
             </div>
             <div class="arrow bounce">
                 <i class="fa-solid fa-arrow-down fa-2x"></i>
@@ -158,7 +157,55 @@
             <div class="wrapper">
                 <h4 data-aos="fade-down">Projects</h4>
                 <div class="projectContainer">
-                    <article class="project4" data-aos="fade-left">
+                    <article class="project6" >
+                        <div class="projectImg">
+                            <a href="https://pig-game-gc-dev.netlify.app" target="_blank" rel="noopener noreferrer"><img
+                                    src="./assets/pig-game.png" alt="screenshot of Pig-game website"></a>
+                        </div>
+                        <div class="projectDesc">
+                            <h3>Pig Game</h3>
+                            <p>Built using vanilla JavaScript, Pig is a dice rolling game where the goal is to bank 100 points before your opponent. Players can score big but lose even bigger in this game of risk/reward. Built using simple JavaScript for game functionality.</p>
+                            <div class="skillsUsed">
+                                <ul>
+                                    <li><i class="fa-brands fa-html5" aria-hidden="true"></i></li>
+                                    <li><i class="fa-brands fa-css3-alt" aria-hidden="true"></i></li>
+                                    <li><i class="fa-brands fa-js" aria-hidden="true"></i></li>
+                                </ul>
+                                <ul class="projectBtn">
+                                    <li><a href="https://pig-game-gc-dev.netlify.app" target="_blank"
+                                            rel="noopener noreferrer"><button>Live Site</button></a></li>
+                                    <li><a href="https://github.com/GregCrutchlow/pig-game" target="_blank"
+                                            rel="noopener noreferrer"><button>Github</button></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="project5" >
+                        <div class="projectImg">
+                            <a href="https://guess-my-number-game-dev.netlify.app" target="_blank" rel="noopener noreferrer"><img
+                                    src="./assets/guess-my-number-game-dev.png" alt="screenshot of Guess My Number game website"></a>
+                        </div>
+                        <div class="projectDesc">
+                            <h3>Guess My Number</h3>
+                            <p>Built using vanilla JavaScript, Guess My Number is a number guessing game between 1-20. Simple code to test my skills manipulating the DOM as well as some game coding and error handling skills.</p>
+                            <div class="skillsUsed">
+                                <ul>
+                                    <li><i class="fa-brands fa-html5" aria-hidden="true"></i></li>
+                                    <li><i class="fa-brands fa-css3-alt" aria-hidden="true"></i></li>
+                                    <li><i class="fa-brands fa-js" aria-hidden="true"></i></li>
+                                </ul>
+                                <ul class="projectBtn">
+                                    <li><a href="https://guess-my-number-game-dev.netlify.app" target="_blank"
+                                            rel="noopener noreferrer"><button>Live Site</button></a></li>
+                                    <li><a href="https://github.com/GregCrutchlow/Guess-My-Number" target="_blank"
+                                            rel="noopener noreferrer"><button>Github</button></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="project4">
                         <div class="projectImg">
                             <a href="https://isthebookbetter44.netlify.app/" target="_blank"
                                 rel="noopener noreferrer"><img src="./assets/isthebookbetter44.png"
@@ -188,7 +235,7 @@
                         </div>
                     </article>
 
-                    <article class="project1" data-aos="fade-right">
+                    <article class="project1">
                         <div class="projectImg">
                             <a href="https://tasty44.netlify.app" target="_blank" rel="noopener noreferrer"><img
                                     src="./assets/tasty44.png" alt="screenshot of Tasty website made by Greg"></a>
@@ -219,7 +266,7 @@
                         <h2>Updating!</h2>
                         <p>Will be back soon! Making some minor updates!</p>
                         <div class="dimmed">
-                            <article class="project2" data-aos="fade-left">
+                            <article class="project2" >
                                 <div class="projectImg">
                                     <a href="https://therestaurantmall44.netlify.app" target="_blank"
                                         rel="noopener noreferrer"><img src="./assets/restaurantmall44.png"
@@ -247,7 +294,7 @@
                                     </div>
                                 </div>
                             </article>
-                            <article class="project3" data-aos="fade-right">
+                            <article class="project3" >
                                 <div class="projectImg">
                                     <a href="https://pokemon-app-44.netlify.app" target="_blank"
                                         rel="noopener noreferrer"><img src="./assets/pokemonapp44.png"
@@ -308,7 +355,7 @@
                         <label for="email">Your Email Address</label><input type="email" name="email" required>
                         <label for="message">How can I Help You?</label><textarea name="message" id="message" rows="10"
                             required></textarea>
-                        <button type="submit" class="btn submitBtn">Send<i class="fa-solid fa-arrow-right"></i></button>
+                        <button type="submit" class="btn submitBtn">Send</button>
                     </form>
                 </div>
             </div>
@@ -324,7 +371,13 @@
             <h5 class="copyright">Copyright © 2022 Greg Crutchlow. All Rights Reserved</h5>
         </div> <!-- wrapper end -->
     </footer>
-
+    <div class="modal hidden">
+        <button class="close-modal">&times;</button>
+        <h3>Lets Chat!</h3>
+        <p>Click here to reach out so we can chat about some cool projects we could build together!</p>
+        <button class="btnContact"><a href="#contact">Contact Me</a></button>
+    </div>
+    <div class="overlay hidden"></div>
     <!-- AOS script link -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>AOS.init();</script>

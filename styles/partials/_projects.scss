@@ -1,4 +1,4 @@
-@use "./variables" as *;
+@use './variables' as *;
 
 .projects {
 	display: flex;
@@ -13,7 +13,8 @@
 			display: flex;
 			flex-direction: column;
 			.project1,
-			.project3 {
+			.project3,
+			.project5 {
 				display: flex;
 				justify-content: space-between;
 				gap: 3rem;
@@ -80,13 +81,13 @@
 				flex-direction: column;
 				align-items: center;
 				justify-content: center;
-				z-index: 100;
+				z-index: 2;
 			}
 			.dimmed {
 				position: relative;
 			}
 			.dimmed:after {
-				content: "";
+				content: '';
 				z-index: 10;
 				display: block;
 				position: absolute;
@@ -94,10 +95,11 @@
 				top: 0;
 				right: 0;
 				left: 0;
-				background: rgba(211,211,211, 0.75);
+				background: rgba(211, 211, 211, 0.75);
 			}
 			.project2,
-			.project4 {
+			.project4,
+			.project6 {
 				display: flex;
 				justify-content: space-between;
 				flex-direction: row-reverse;
