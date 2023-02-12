@@ -55,14 +55,19 @@ portfolio.hamburgerMenu = () => {
 	})
 }
 
-// simple easter egg to spin header profil picture
-portfolio.profilePic = () => {
-    const profile = document.querySelector(".headerProfilePic")
 
-    profile.addEventListener("click", () => {
-        profile.classList.toggle("egg")
-    })
-}
+// portfolio.profilePic = () => {
+//     const profile = document.querySelector(".headerProfilePic")
+
+// simple easter egg to spin header profil picture
+// portfolio.profilePic = () => {
+//    const profile = document.querySelector(".headerProfilePic")
+
+
+//     profile.addEventListener("click", () => {
+//         profile.classList.toggle("egg")
+//     })
+// }
 
 // dark mode toggle, need to refine
 portfolio.darkMode = () => {
@@ -96,14 +101,52 @@ portfolio.darkMode = () => {
 	})
 }
 
+
+portfolio.modal = () => {
+    const modal = document.querySelector('.modal');
+    const overlay = document.querySelector('.overlay');
+    const btnContact = document.querySelector('.btnContact');
+    const btnCloseModal = document.querySelector('.close-modal');
+
+    const modalPop = () => {
+        modal.classList.remove('hidden');
+        overlay.classList.remove('hidden');
+    }
+
+    setTimeout(modalPop, 10000);
+
+    const closeModal = () => {
+        modal.classList.add('hidden');
+		overlay.classList.add('hidden');
+    }
+
+    // These close the modal based on either: the button to go to contact, the close button or anywhere on the screen outside of modal or the escape key
+    btnContact.addEventListener('click', closeModal);
+    btnCloseModal.addEventListener('click', closeModal);
+    overlay.addEventListener('click', closeModal)
+
+    document.addEventListener('keydown', (e) => {
+        console.log(e);
+        if (e.key === 'Escape' && !modal.classList.contains('hidden')) {
+            closeModal();
+        }
+    })
+};
+
+
 // this adds in all functions to be called when portfolio is called
+
 portfolio.init = () => {
     portfolio.observer();
     portfolio.hamburgerMenu();
-    portfolio.profilePic();
+    // portfolio.profilePic();
     portfolio.darkMode();
+    portfolio.modal();
 }
 
 // this initializes all functions within portfolio function
 portfolio.init();
+
+
+
 

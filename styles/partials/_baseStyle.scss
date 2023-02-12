@@ -9,6 +9,7 @@ html {
 body {
     background: $white;
     overflow-x: hidden;
+    position: relative;
 }
 
 
@@ -69,3 +70,6 @@ section {
     }
 }
 
+.hidden {
+    display: none;
+}
