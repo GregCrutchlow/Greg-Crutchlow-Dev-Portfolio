@@ -1259,6 +1259,14 @@ footer .copyright {
           align-items: center;
 }
 
+.footerDarkMode {
+  background: #171717;
+  color: #e4e4e4;
+}
+.footerDarkMode .backUp {
+  background: #171717;
+  color: #e4e4e4;
+}
 
 .modal {
   margin: auto;
@@ -1305,15 +1313,6 @@ footer .copyright {
   -webkit-backdrop-filter: blur(3px);
           backdrop-filter: blur(3px);
   z-index: 5;
-
-.footerDarkMode {
-  background: #171717;
-  color: #e4e4e4;
-}
-.footerDarkMode .backUp {
-  background: #171717;
-  color: #e4e4e4;
-
 }
 
 @media screen and (max-width: 1500px) {
