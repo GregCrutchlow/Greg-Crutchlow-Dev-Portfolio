@@ -1317,7 +1317,8 @@ footer .copyright {
   .projects .wrapper .projectContainer .project3 .projectDesc .skillsUsed,
   .projects .wrapper .projectContainer .project4 .projectDesc .skillsUsed,
   .projects .wrapper .projectContainer .project5 .projectDesc .skillsUsed,
-  .projects .wrapper .projectContainer .project6 .projectDesc .skillsUsed {
+  .projects .wrapper .projectContainer .project6 .projectDesc .skillsUsed,
+  .projects .wrapper .projectContainer .project7 .projectDesc .skillsUsed {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1450,7 +1451,8 @@ footer .copyright {
   .projects .wrapper .projectContainer .project3,
   .projects .wrapper .projectContainer .project4,
   .projects .wrapper .projectContainer .project5,
-  .projects .wrapper .projectContainer .project6 {
+  .projects .wrapper .projectContainer .project6,
+  .projects .wrapper .projectContainer .project7 {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1465,7 +1467,8 @@ footer .copyright {
   .projects .wrapper .projectContainer .project3 .projectDesc,
   .projects .wrapper .projectContainer .project4 .projectDesc,
   .projects .wrapper .projectContainer .project5 .projectDesc,
-  .projects .wrapper .projectContainer .project6 .projectDesc {
+  .projects .wrapper .projectContainer .project6 .projectDesc,
+  .projects .wrapper .projectContainer .project7 .projectDesc {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -1475,7 +1478,8 @@ footer .copyright {
   .projects .wrapper .projectContainer .project3 .projectDesc p,
   .projects .wrapper .projectContainer .project4 .projectDesc p,
   .projects .wrapper .projectContainer .project5 .projectDesc p,
-  .projects .wrapper .projectContainer .project6 .projectDesc p {
+  .projects .wrapper .projectContainer .project6 .projectDesc p,
+  .projects .wrapper .projectContainer .project7 .projectDesc p {
     text-align: center;
   }
   .modal {
@@ -1536,7 +1540,8 @@ footer .copyright {
   .projects .wrapper .projectContainer .project3 .projectImg img,
   .projects .wrapper .projectContainer .project4 .projectImg img,
   .projects .wrapper .projectContainer .project5 .projectImg img,
-  .projects .wrapper .projectContainer .project6 .projectImg img {
+  .projects .wrapper .projectContainer .project6 .projectImg img,
+  .projects .wrapper .projectContainer .project7 .projectImg img {
     width: 100%;
     height: 200px;
     aspect-ratio: 16/9;
@@ -1546,7 +1551,8 @@ footer .copyright {
   .projects .wrapper .projectContainer .project3 .projectDesc,
   .projects .wrapper .projectContainer .project4 .projectDesc,
   .projects .wrapper .projectContainer .project5 .projectDesc,
-  .projects .wrapper .projectContainer .project6 .projectDesc {
+  .projects .wrapper .projectContainer .project6 .projectDesc,
+  .projects .wrapper .projectContainer .project7 .projectDesc {
     width: 90%;
   }
   .modal {
@@ -1587,7 +1593,8 @@ footer .copyright {
   .projects .wrapper .projectContainer .project3 .projectImg img,
   .projects .wrapper .projectContainer .project4 .projectImg img,
   .projects .wrapper .projectContainer .project5 .projectImg img,
-  .projects .wrapper .projectContainer .project6 .projectImg img {
+  .projects .wrapper .projectContainer .project6 .projectImg img,
+  .projects .wrapper .projectContainer .project7 .projectImg img {
     width: 100%;
     height: 150px;
     aspect-ratio: 16/9;
@@ -1597,7 +1604,8 @@ footer .copyright {
   .projects .wrapper .projectContainer .project3 .projectDesc,
   .projects .wrapper .projectContainer .project4 .projectDesc,
   .projects .wrapper .projectContainer .project5 .projectDesc,
-  .projects .wrapper .projectContainer .project6 .projectDesc {
+  .projects .wrapper .projectContainer .project6 .projectDesc,
+  .projects .wrapper .projectContainer .project7 .projectDesc {
     width: 100%;
   }
   .projects .wrapper .projectContainer .project1 .projectDesc .skillsUsed ul li,
@@ -1605,7 +1613,8 @@ footer .copyright {
   .projects .wrapper .projectContainer .project3 .projectDesc .skillsUsed ul li,
   .projects .wrapper .projectContainer .project4 .projectDesc .skillsUsed ul li,
   .projects .wrapper .projectContainer .project5 .projectDesc .skillsUsed ul li,
-  .projects .wrapper .projectContainer .project6 .projectDesc .skillsUsed ul li {
+  .projects .wrapper .projectContainer .project6 .projectDesc .skillsUsed ul li,
+  .projects .wrapper .projectContainer .project7 .projectDesc .skillsUsed ul li {
     padding: 5px;
   }
   .projects .wrapper .projectContainer .project1 .projectDesc .skillsUsed .projectBtn,
@@ -1613,7 +1622,8 @@ footer .copyright {
   .projects .wrapper .projectContainer .project3 .projectDesc .skillsUsed .projectBtn,
   .projects .wrapper .projectContainer .project4 .projectDesc .skillsUsed .projectBtn,
   .projects .wrapper .projectContainer .project5 .projectDesc .skillsUsed .projectBtn,
-  .projects .wrapper .projectContainer .project6 .projectDesc .skillsUsed .projectBtn {
+  .projects .wrapper .projectContainer .project6 .projectDesc .skillsUsed .projectBtn,
+  .projects .wrapper .projectContainer .project7 .projectDesc .skillsUsed .projectBtn {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1628,7 +1638,8 @@ footer .copyright {
   .projects .wrapper .projectContainer .project3 .projectDesc .skillsUsed .projectBtn button,
   .projects .wrapper .projectContainer .project4 .projectDesc .skillsUsed .projectBtn button,
   .projects .wrapper .projectContainer .project5 .projectDesc .skillsUsed .projectBtn button,
-  .projects .wrapper .projectContainer .project6 .projectDesc .skillsUsed .projectBtn button {
+  .projects .wrapper .projectContainer .project6 .projectDesc .skillsUsed .projectBtn button,
+  .projects .wrapper .projectContainer .project7 .projectDesc .skillsUsed .projectBtn button {
     width: 200px;
   }
   .modal {
@@ -1689,7 +1700,8 @@ footer .copyright {
   .projects .wrapper .projectContainer .project2 .projectImg img,
   .projects .wrapper .projectContainer .project3 .projectImg img,
   .projects .wrapper .projectContainer .project5 .projectImg img,
-  .projects .wrapper .projectContainer .project6 .projectImg img {
+  .projects .wrapper .projectContainer .project6 .projectImg img,
+  .projects .wrapper .projectContainer .project7 .projectImg img {
     height: 150px;
   }
   .projects .wrapper .projectContainer .project4 .projectDesc,
@@ -1697,7 +1709,8 @@ footer .copyright {
   .projects .wrapper .projectContainer .project2 .projectDesc,
   .projects .wrapper .projectContainer .project3 .projectDesc,
   .projects .wrapper .projectContainer .project5 .projectDesc,
-  .projects .wrapper .projectContainer .project6 .projectDesc {
+  .projects .wrapper .projectContainer .project6 .projectDesc,
+  .projects .wrapper .projectContainer .project7 .projectDesc {
     width: 95%;
   }
   .projects .wrapper .projectContainer .project4 .projectDesc .skillsUsed .projectBtn,
@@ -1705,7 +1718,8 @@ footer .copyright {
   .projects .wrapper .projectContainer .project2 .projectDesc .skillsUsed .projectBtn,
   .projects .wrapper .projectContainer .project3 .projectDesc .skillsUsed .projectBtn,
   .projects .wrapper .projectContainer .project5 .projectDesc .skillsUsed .projectBtn,
-  .projects .wrapper .projectContainer .project6 .projectDesc .skillsUsed .projectBtn {
+  .projects .wrapper .projectContainer .project6 .projectDesc .skillsUsed .projectBtn,
+  .projects .wrapper .projectContainer .project7 .projectDesc .skillsUsed .projectBtn {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
