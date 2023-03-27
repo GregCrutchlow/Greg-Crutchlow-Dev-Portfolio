@@ -47,16 +47,8 @@ portfolio.hamburgerMenu = () => {
 
 	navMenu.addEventListener("click", function (e) {
         e.stopPropagation()
-	})
+    })
 }
-
-// portfolio.profilePic = () => {
-//     const profile = document.querySelector(".headerProfilePic")
-
-//     profile.addEventListener("click", () => {
-//         profile.classList.toggle("egg")
-//     })
-// }
 
 portfolio.darkMode = () => {
     // const detect = window.matchMedia("(prefers-color-scheme: dark)")
@@ -125,7 +117,6 @@ portfolio.modal = () => {
 portfolio.init = () => {
     portfolio.navBarToggle();
     portfolio.hamburgerMenu();
-    // portfolio.profilePic();
     portfolio.darkMode();
     portfolio.modal();
 }

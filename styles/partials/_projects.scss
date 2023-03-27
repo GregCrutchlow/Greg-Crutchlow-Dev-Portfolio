@@ -9,12 +9,14 @@
 		flex-direction: column;
 		align-items: center;
 		.projectContainer {
-			margin-top: 2rem;
+			margin: 2rem 0;
 			display: flex;
 			flex-direction: column;
+			height: 100%;
 			.project1,
 			.project3,
-			.project5 {
+			.project5,
+			.project7 {
 				display: flex;
 				justify-content: space-between;
 				gap: 3rem;
@@ -22,12 +24,13 @@
 				.projectImg {
 					img {
 						border: 5px solid $crimson;
-						height: 300px;
+						height: 250px;
 						width: 100%;
 						transition: all 0.2s ease-in-out;
 						&:hover {
 							border: 5px solid $dark;
 							scale: 0.95;
+							border-radius: 15px;
 						}
 					}
 				}
@@ -76,27 +79,27 @@
 					}
 				}
 			}
-			.comingSoon {
-				display: flex;
-				flex-direction: column;
-				align-items: center;
-				justify-content: center;
-				z-index: 2;
-			}
-			.dimmed {
-				position: relative;
-			}
-			.dimmed:after {
-				content: '';
-				z-index: 10;
-				display: block;
-				position: absolute;
-				height: 100%;
-				top: 0;
-				right: 0;
-				left: 0;
-				background: rgba(211, 211, 211, 0.75);
-			}
+			// .comingSoon {
+			// 	display: flex;
+			// 	flex-direction: column;
+			// 	align-items: center;
+			// 	justify-content: center;
+			// 	z-index: 2;
+			// }
+			// .dimmed {
+			// 	position: relative;
+			// }
+			// .dimmed:after {
+			// 	content: '';
+			// 	z-index: 10;
+			// 	display: block;
+			// 	position: absolute;
+			// 	height: 100%;
+			// 	top: 0;
+			// 	right: 0;
+			// 	left: 0;
+			// 	background: rgba(211, 211, 211, 0.75);
+			// }
 			.project2,
 			.project4,
 			.project6 {
@@ -114,6 +117,7 @@
 						&:hover {
 							border: 5px solid $dark;
 							scale: 0.95;
+							border-radius: 15px;
 						}
 					}
 				}
@@ -136,6 +140,7 @@
 					.skillsUsed {
 						display: flex;
 						flex-direction: row-reverse;
+						justify-content: space-between;
 						align-items: center;
 						ul {
 							display: flex;
