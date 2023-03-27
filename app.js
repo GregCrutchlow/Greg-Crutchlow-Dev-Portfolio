@@ -52,9 +52,11 @@ portfolio.hamburgerMenu = () => {
 
 	navMenu.addEventListener("click", function (e) {
         e.stopPropagation()
-	})
+    })
 }
 
+<<<<<<< HEAD
+=======
 
 // portfolio.profilePic = () => {
 //     const profile = document.querySelector(".headerProfilePic")
@@ -70,6 +72,7 @@ portfolio.hamburgerMenu = () => {
 // }
 
 // dark mode toggle, need to refine
+>>>>>>> 3e092db57630c3ac5430059efa33e7f6c7d1f069
 portfolio.darkMode = () => {
     // const detect = window.matchMedia("(prefers-color-scheme: dark)")
     const darkBtn = document.querySelector(".darkBtn");
@@ -139,7 +142,6 @@ portfolio.modal = () => {
 portfolio.init = () => {
     portfolio.observer();
     portfolio.hamburgerMenu();
-    // portfolio.profilePic();
     portfolio.darkMode();
     portfolio.modal();
 }
