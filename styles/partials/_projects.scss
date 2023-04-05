@@ -16,7 +16,7 @@
 			.project1,
 			.project3,
 			.project5,
-			.project7 {
+			.project7{
 				display: flex;
 				justify-content: space-between;
 				gap: 3rem;
@@ -79,30 +79,10 @@
 					}
 				}
 			}
-			// .comingSoon {
-			// 	display: flex;
-			// 	flex-direction: column;
-			// 	align-items: center;
-			// 	justify-content: center;
-			// 	z-index: 2;
-			// }
-			// .dimmed {
-			// 	position: relative;
-			// }
-			// .dimmed:after {
-			// 	content: '';
-			// 	z-index: 10;
-			// 	display: block;
-			// 	position: absolute;
-			// 	height: 100%;
-			// 	top: 0;
-			// 	right: 0;
-			// 	left: 0;
-			// 	background: rgba(211, 211, 211, 0.75);
-			// }
 			.project2,
 			.project4,
-			.project6 {
+			.project6,
+			.project8 {
 				display: flex;
 				justify-content: space-between;
 				flex-direction: row-reverse;
