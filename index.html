@@ -1,373 +1,741 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			http-equiv="X-UA-Compatible"
+			content="IE=edge" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0" />
+		<meta
+			name="description"
+			content="Personal portfolio page for Greg Crutchlow as a front-end web developer, showing off skills and projects I've worked on." />
+		<link
+			rel="shortcut icon"
+			href="./assets/GregDev Logo White.png"
+			type="image/x-icon" />
+		<title>Greg Crutchlow Developer</title>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="Personal portfolio page for Greg Crutchlow as a front-end web developer, showing off skills and projects I've worked on.">
-    <link rel="shortcut icon" href="./assets/GregDev Logo White.png" type="image/x-icon">
-    <title>Greg Crutchlow Developer</title>
+		<!-- Style Sheet import -->
+		<link
+			rel="stylesheet"
+			href="./styles/style.css" />
 
-    <!-- Style Sheet import -->
-    <link rel="stylesheet" href="./styles/style.css">
+		<!-- Google Fonts import-->
+		<link
+			rel="preconnect"
+			href="https://fonts.googleapis.com" />
+		<link
+			rel="preconnect"
+			href="https://fonts.gstatic.com"
+			crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@400;700&family=PT+Sans+Caption:wght@400;700&display=swap"
+			rel="stylesheet" />
 
-    <!-- Google Fonts import-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@400;700&family=PT+Sans+Caption:wght@400;700&display=swap"
-        rel="stylesheet">
+		<!-- Fontawesome import -->
+		<script
+			src="https://kit.fontawesome.com/d718794c03.js"
+			crossorigin="anonymous"></script>
 
-    <!-- Fontawesome import -->
-    <script src="https://kit.fontawesome.com/d718794c03.js" crossorigin="anonymous"></script>
+		<!-- DevIcon import -->
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css" />
 
-    <!-- DevIcon import -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+		<!-- AOS scroll library -->
+		<link
+			href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+			rel="stylesheet" />
+	</head>
 
-    <!-- AOS scroll library -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-</head>
+	<body>
+		<!-- Skip Link-->
+		<a
+			id="skipNav"
+			class="screenreaderText"
+			href="#mainContent">
+			Skip Navigation or Skip to Content
+		</a>
 
-<body>
-    <!-- Skip Link-->
-    <a id='skipNav' class='screenreaderText' href='#mainContent'>
-        Skip Navigation or Skip to Content
-    </a>
+		<!-- Nav Bar Section -->
+		<nav class="navBar">
+			<div class="wrapper">
+				<!-- Nav Links - Mobile and Full Page -->
+				<a href="#">
+					<img
+						class="logo"
+						src="./assets/GregDev Logo White.png"
+						alt="Greg Crutchlow's Dev Logo" />
+				</a>
+				<ul
+					class="navMenu"
+					id="navLinks">
+					<li class="navItem"><a href="#">Home</a></li>
+					<li class="navItem"><a href="#about">About</a></li>
+					<li class="navItem"><a href="#skills">Tech Stack</a></li>
+					<li class="navItem"><a href="#projects">Projects</a></li>
+					<li class="navItem"><a href="#contact">Contact</a></li>
+					<li class="navItem"><button class="darkBtn">Dark Mode</button></li>
+				</ul>
+				<div class="hamburger">
+					<span class="bar"></span>
+					<span class="bar"></span>
+					<span class="bar"></span>
+				</div>
+			</div>
+			<!-- wrapper end -->
+		</nav>
+		<!-- navBar end -->
+		<!-- Header Section -->
+		<header>
+			<div class="wrapper">
+				<div class="headerContainer">
+					<div class="headerText">
+						<h2>Hi! I'm Greg!</h2>
+						<h1>A Front-End <br />Web Dev</h1>
+						<div class="headerBtns">
+							<a href="#projects"><button class="headerButton">View My Works</button></a>
+							<a href="#contact"><button class="headerClearBtn">Contact Me</button></a>
+						</div>
+						<div class="socialLinks">
+							<ul>
+								<li>
+									<a
+										href="https://twitter.com/GregCrutchlow"
+										target="_blank"
+										rel="noopener noreferrer"
+										><i class="fa-brands fa-twitter"></i
+									></a>
+								</li>
+								<li>
+									<a
+										href="https://linkedin.com/in/gregcrutchlow"
+										target="_blank"
+										rel="noopener noreferrer"
+										><i class="fa-brands fa-linkedin"></i
+									></a>
+								</li>
+								<li>
+									<a
+										href="https://github.com/GregCrutchlow"
+										target="_blank"
+										rel="noopener noreferrer"
+										><i class="fa-brands fa-github"></i
+									></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="arrow bounce">
+					<i class="fa-solid fa-arrow-down fa-2x"></i>
+				</div>
+			</div>
+			<!-- wrapper end-->
+		</header>
+		<!-- Header end-->
+		<main id="mainContent">
+			<section
+				id="about"
+				class="about">
+				<!-- About Section -->
+				<div class="wrapper">
+					<div class="aboutMeTitle">
+						<h4
+							data-aos="fade-down"
+							class="aboutTitle">
+							About Me
+						</h4>
+						<h2>Get To Know Me</h2>
+					</div>
+					<div class="aboutMeContainer">
+						<div class="aboutMeTalk">
+							<h3 id="hi">Hi, I'm <span class="name">Greg Crutchlow</span></h3>
+							<p>
+								I'm a Front-End Web Developer with a passion for web development. I love creating elegant, clean and accessible websites for
+								every user. I started my web development journey in photography but soon found my calling in creating websites.
+							</p>
+							<p>
+								When I'm not coding, I spend my time with my family or doing a handful of hobbies that occupy my time, including but not limited
+								to: anything mechanical keyboard related, Magic The Gathering, Leatherworking (beginner) and wood working.
+							</p>
+						</div>
+						<div class="aboutMeGraphic">
+							<img
+								src="./assets/gregProfilePic02.webp"
+								alt="Profile picture of Greg outdoors" />
+						</div>
+					</div>
+					<div class="aboutMeDetails">
+						<div class="aboutName">
+							<h5>Name:</h5>
+							<p>Greg Crutchlow</p>
+						</div>
+						<div class="aboutEmail">
+							<h5>Email:</h5>
+							<p>gregcrutchlow@gmail.com</p>
+						</div>
+						<div class="aboutFrom">
+							<h5>From:</h5>
+							<p>Ottawa, Canada</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- End About Section -->
+			<section
+				id="skills"
+				class="skills">
+				<!-- Tech Stack Section -->
+				<div class="wrapper">
+					<h4 data-aos="fade-down">My Skills</h4>
+					<h2>How I can help in your next project</h2>
+					<div>
+						<ul class="techStack">
+							<li data-aos="fade-down">
+								<i
+									class="fa-brands fa-html5"
+									aria-hidden="true"></i
+								>HTML 5
+							</li>
+							<li data-aos="fade-down">
+								<i
+									class="fa-brands fa-css3-alt"
+									aria-hidden="true"></i
+								>CSS 3
+							</li>
+							<li data-aos="fade-down">
+								<i
+									class="fa-brands fa-js"
+									aria-hidden="true"></i
+								>JS
+							</li>
+							<li data-aos="fade-down">
+								<i
+									class="fa-brands fa-sass"
+									aria-hidden="true"></i
+								>Sass
+							</li>
+							<li data-aos="fade-down"><i class="devicon-nodejs-plain"></i>Node JS</li>
+							<li data-aos="fade-down">
+								<i
+									class="fa-brands fa-git-alt"
+									aria-hidden="true"></i
+								>Git
+							</li>
+							<li data-aos="fade-down">
+								<i
+									class="fa-brands fa-github"
+									aria-hidden="true"></i
+								>GitHub
+							</li>
+							<li data-aos="fade-down">
+								<i
+									class="fa-brands fa-react"
+									aria-hidden="true"></i
+								>React
+							</li>
+							<li data-aos="fade-down">
+								<i
+									class="fa-solid fa-server"
+									aria-hidden="true"></i
+								>REST API
+							</li>
+							<li data-aos="fade-down">
+								<i
+									class="fa-solid fa-pen-ruler"
+									aria-hidden="true"></i
+								>DRY Design
+							</li>
+							<li data-aos="fade-down"><i class="fa-solid fa-universal-access"></i>Accessibility</li>
+							<li data-aos="fade-down">
+								<i
+									class="devicon-firebase-plain"
+									aria-hidden="true"></i
+								>Firebase
+							</li>
+							<li data-aos="fade-down">
+								<i
+									class="devicon-photoshop-plain"
+									aria-hidden="true"></i
+								>Photoshop
+							</li>
+							<li data-aos="fade-down"><i class="devicon-vscode-plain"></i>VS Code</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+			<!-- End Tech Stack -->
+			<section
+				id="projects"
+				class="projects">
+				<!-- Projects Section -->
+				<div class="wrapper">
+					<h4 data-aos="fade-down">Projects</h4>
+					<div class="projectContainer">
+						<article class="project6">
+							<div class="projectImg">
+								<a
+									href="https://crutches-css.netlify.app"
+									target="_blank"
+									rel="noopener noreferrer"
+									><img
+										src="./assets/crutches-css-library.png"
+										alt="screenshot of Crutches CSS Library Website"
+								/></a>
+							</div>
+							<div class="projectDesc">
+								<h3>Crutches CSS Library</h3>
+								<p>
+									Built using Sass to create a CSS library based on Tailwind CSS and Bootstrap, its a class based css library to completely
+									style your website only using classes in html and rarely, if ever, touching the css directly. Still a work in progress with
+									a sample site coming soon.
+								</p>
+								<div class="skillsUsed">
+									<ul>
+										<li>
+											<i
+												class="fa-brands fa-sass"
+												aria-hidden="true"></i>
+										</li>
+										<li>
+											<i
+												class="fa-brands fa-css3-alt"
+												aria-hidden="true"></i>
+										</li>
+										<li>
+											<i
+												class="fa-brands fa-html5"
+												aria-hidden="true"></i>
+										</li>
+									</ul>
+									<ul class="projectBtn">
+										<li>
+											<a
+												href="https://crutches-css.netlify.app"
+												target="_blank"
+												rel="noopener noreferrer"
+												><button>Live Site</button></a
+											>
+										</li>
+										<li>
+											<a
+												href="https://github.com/GregCrutchlow/Crutches-CSS-Libary"
+												target="_blank"
+												rel="noopener noreferrer"
+												><button>Github</button></a
+											>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</article>
+						<article class="project7">
+							<div class="projectImg">
+								<a
+									href="https://gregcrutchlow-gpt-3-mockup.netlify.app"
+									target="_blank"
+									rel="noopener noreferrer"
+									><img
+										src="./assets/gpt3-mockup.png"
+										alt="screenshot of GPT-3 Mockup Site"
+								/></a>
+							</div>
+							<div class="projectDesc">
+								<h3>GPT-3 Mockup Site</h3>
+								<p>
+									Built using React and CSS, built to show skills with React and design for websites. Tried new techniques to build the site
+									and compartmentalize aspects of the site building process. This is strictly a mockup, a non-functioning site.
+								</p>
+								<div class="skillsUsed">
+									<ul>
+										<li>
+											<i
+												class="fa-brands fa-react"
+												aria-hidden="true"></i>
+										</li>
+										<li>
+											<i
+												class="fa-brands fa-css3-alt"
+												aria-hidden="true"></i>
+										</li>
+										<li>
+											<i
+												class="fa-brands fa-js"
+												aria-hidden="true"></i>
+										</li>
+									</ul>
+									<ul class="projectBtn">
+										<li>
+											<a
+												href="https://gregcrutchlow-gpt-3-mockup.netlify.app"
+												target="_blank"
+												rel="noopener noreferrer"
+												><button>Live Site</button></a
+											>
+										</li>
+										<li>
+											<a
+												href="https://github.com/GregCrutchlow/youtube-course"
+												target="_blank"
+												rel="noopener noreferrer"
+												><button>Github</button></a
+											>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</article>
+						<article class="project6">
+							<div class="projectImg">
+								<a
+									href="https://pig-game-gc-dev.netlify.app"
+									target="_blank"
+									rel="noopener noreferrer"
+									><img
+										src="./assets/pig-game.png"
+										alt="screenshot of Pig-game website"
+								/></a>
+							</div>
+							<div class="projectDesc">
+								<h3>Pig Game</h3>
+								<p>
+									Built using vanilla JavaScript, Pig is a dice rolling game where the goal is to bank 100 points before your opponent.
+									Players can score big but lose even bigger in this game of risk/reward. Built using simple JavaScript for game
+									functionality.
+								</p>
+								<div class="skillsUsed">
+									<ul>
+										<li>
+											<i
+												class="fa-brands fa-html5"
+												aria-hidden="true"></i>
+										</li>
+										<li>
+											<i
+												class="fa-brands fa-css3-alt"
+												aria-hidden="true"></i>
+										</li>
+										<li>
+											<i
+												class="fa-brands fa-js"
+												aria-hidden="true"></i>
+										</li>
+									</ul>
+									<ul class="projectBtn">
+										<li>
+											<a
+												href="https://pig-game-gc-dev.netlify.app"
+												target="_blank"
+												rel="noopener noreferrer"
+												><button>Live Site</button></a
+											>
+										</li>
+										<li>
+											<a
+												href="https://github.com/GregCrutchlow/pig-game"
+												target="_blank"
+												rel="noopener noreferrer"
+												><button>Github</button></a
+											>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</article>
+						<article class="project5">
+							<div class="projectImg">
+								<a
+									href="https://guess-my-number-game-dev.netlify.app"
+									target="_blank"
+									rel="noopener noreferrer"
+									><img
+										src="./assets/guess-my-number-game-dev.png"
+										alt="screenshot of Guess My Number game website"
+								/></a>
+							</div>
+							<div class="projectDesc">
+								<h3>Guess My Number</h3>
+								<p>
+									Built using vanilla JavaScript, Guess My Number is a number guessing game between 1-20. Simple code to test my skills
+									manipulating the DOM as well as some game coding and error handling skills.
+								</p>
+								<div class="skillsUsed">
+									<ul>
+										<li>
+											<i
+												class="fa-brands fa-html5"
+												aria-hidden="true"></i>
+										</li>
+										<li>
+											<i
+												class="fa-brands fa-css3-alt"
+												aria-hidden="true"></i>
+										</li>
+										<li>
+											<i
+												class="fa-brands fa-js"
+												aria-hidden="true"></i>
+										</li>
+									</ul>
+									<ul class="projectBtn">
+										<li>
+											<a
+												href="https://guess-my-number-game-dev.netlify.app"
+												target="_blank"
+												rel="noopener noreferrer"
+												><button>Live Site</button></a
+											>
+										</li>
+										<li>
+											<a
+												href="https://github.com/GregCrutchlow/Guess-My-Number"
+												target="_blank"
+												rel="noopener noreferrer"
+												><button>Github</button></a
+											>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</article>
+						<article class="project4">
+							<div class="projectImg">
+								<a
+									href="https://isthebookbetter44.netlify.app/"
+									target="_blank"
+									rel="noopener noreferrer"
+									><img
+										src="./assets/isthebookbetter44.png"
+										alt="screenshot of Is The Book Better website"
+								/></a>
+							</div>
+							<div class="projectDesc">
+								<h3>Is The Book Better</h3>
+								<p>
+									Built during bootcamp at Juno College cohort 44. Group project with other members Paco, Louis and Matt. Compare a book and
+									its movie and find out which one you should spend your time on!
+								</p>
+								<div class="skillsUsed">
+									<ul>
+										<li>
+											<i
+												class="devicon-react-original"
+												aria-hidden="true"></i>
+										</li>
+										<li>
+											<i
+												class="devicon-nodejs-plain"
+												aria-hidden="true"></i>
+										</li>
+										<li>
+											<i
+												class="devicon-sass-original"
+												aria-hidden="true"></i>
+										</li>
+										<li>
+											<i
+												class="fa-brands fa-js"
+												aria-hidden="true"></i>
+										</li>
+										<li>
+											<i
+												class="fa-solid fa-people-group"
+												aria-hidden="true"></i>
+										</li>
+									</ul>
+									<ul class="projectBtn">
+										<li>
+											<a
+												href="https://isthebookbetter44.netlify.app"
+												target="_blank"
+												rel="noopener noreferrer"
+												><button>Live Site</button></a
+											>
+										</li>
+										<li>
+											<a
+												href="https://github.com/GregCrutchlow/Book-Better-GC"
+												target="_blank"
+												rel="noopener noreferrer"
+												><button>Github</button></a
+											>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</article>
 
-    <!-- Nav Bar Section -->
-    <nav class="navBar">
-        <div class="wrapper">
-            <!-- Nav Links - Mobile and Full Page -->
-            <a href="#">
-                <img class="logo" src="./assets/GregDev Logo White.png" alt="Greg Crutchlow's Dev Logo">
-            </a>
-            <ul class="navMenu" id="navLinks">
-                <li class="navItem"><a href="#">Home</a></li>
-                <li class="navItem"><a href="#about">About</a></li>
-                <li class="navItem"><a href="#skills">Tech Stack</a></li>
-                <li class="navItem"><a href="#projects">Projects</a></li>
-                <li class="navItem"><a href="#contact">Contact</a></li>
-                <li class="navItem"><button class="darkBtn">Dark Mode</button></li>
-            </ul>
-            <div class="hamburger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
+						<article class="project1">
+							<div class="projectImg">
+								<a
+									href="https://tasty44.netlify.app"
+									target="_blank"
+									rel="noopener noreferrer"
+									><img
+										src="./assets/tasty44.png"
+										alt="screenshot of Tasty website made by Greg"
+								/></a>
+							</div>
+							<div class="projectDesc">
+								<h3>The Tasty Website</h3>
+								<p>
+									Built during bootcamp at Juno College cohort 44. First project building a website. Built to learn and test skills pertaining
+									to HTML, CSS as well as Accessibility and ease of use for the user.
+								</p>
+								<div class="skillsUsed">
+									<ul>
+										<li>
+											<i
+												class="devicon-html5-plain"
+												aria-hidden="true"></i>
+										</li>
+										<li>
+											<i
+												class="devicon-css3-plain"
+												aria-hidden="true"></i>
+										</li>
+										<li>
+											<i
+												class="fa-brands fa-js"
+												aria-hidden="true"></i>
+										</li>
+										<li>
+											<i
+												class="fa-solid fa-universal-access"
+												aria-hidden="true"></i>
+										</li>
+									</ul>
+									<ul class="projectBtn">
+										<li>
+											<a
+												href="https://tasty44.netlify.app"
+												target="_blank"
+												rel="noopener noreferrer"
+												><button>Live Site</button></a
+											>
+										</li>
+										<li>
+											<a
+												href="https://github.com/GregCrutchlow/gregCrutchlowAssignmentOne"
+												target="_blank"
+												rel="noopener noreferrer"
+												><button>Github</button></a
+											>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</article>
+					</div>
+				</div>
+			</section>
+			<!-- End Projects Section -->
+			<section
+				id="contact"
+				class="contact">
+				<!-- Contact Section -->
+				<div class="wrapper">
+					<div class="contactDetails">
+						<h3>Let's get in touch</h3>
+						<p>I enjoy talking about new ideas and challenges. Please give as many details as possible for our first meet-up.</p>
+						<h4>Living In:</h4>
+						<p>Orleans, Ottawa, Canada</p>
+						<h4>Email:</h4>
+						<p>gregcrutchlow@gmail.com</p>
+						<div>
+							<ul class="contactSocial">
+								<li>
+									<a
+										href="https://twitter.com/GregCrutchlow"
+										target="_blank"
+										rel="noopener noreferrer"
+										><i class="fa-brands fa-twitter"></i
+									></a>
+								</li>
+								<li>
+									<a
+										href="https://linkedin.com/in/gregcrutchlow"
+										target="_blank"
+										rel="noopener noreferrer"
+										><i class="fa-brands fa-linkedin"></i
+									></a>
+								</li>
+								<li>
+									<a
+										href="https://github.com/GregCrutchlow"
+										target="_blank"
+										rel="noopener noreferrer"
+										><i class="fa-brands fa-github"></i
+									></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="contactFormContainer">
+						<h3>Lets Chat!</h3>
+						<form
+							action="https://formsubmit.co/gregcrutchlow@gmail.com"
+							method="POST"
+							class="contactForm">
+							<label for="name">What is Your Name</label
+							><input
+								type="text"
+								name="name"
+								required />
+							<label for="email">Your Email Address</label
+							><input
+								type="email"
+								name="email"
+								required />
+							<label for="message">How can I Help You?</label
+							><textarea
+								name="message"
+								id="message"
+								rows="10"
+								required></textarea>
+							<button
+								type="submit"
+								class="btn submitBtn">
+								Send
+							</button>
+						</form>
+					</div>
+				</div>
+			</section>
+			<!-- End Contact Section -->
+		</main>
+		<footer>
+			<div class="backToTop">
+				<button
+					class="backUp"
+					onclick="window.location.href='#';">
+					Back To Top
+				</button>
+			</div>
+			<div class="wrapper">
+				<h5 class="copyright">Copyright © 2022 Greg Crutchlow. All Rights Reserved</h5>
+			</div>
+			<!-- wrapper end -->
+		</footer>
+		<div class="modal hidden">
+			<button class="close-modal">&times;</button>
+			<h3>Lets Chat!</h3>
+			<p>Click here to reach out so we can chat about some cool projects we could build together!</p>
+			<button class="btnContact"><a href="#contact">Contact Me</a></button>
+		</div>
+		<div class="overlay hidden"></div>
+		<!-- AOS script link -->
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		<script>
+			AOS.init();
+		</script>
 
-        </div> <!-- wrapper end -->
-    </nav> <!-- navBar end -->
-    <!-- Header Section -->
-    <header>
-        <div class="wrapper">
-            <div class="headerContainer">
-                <div class="headerText">
-                    <h2>Hi! I'm Greg!</h2>
-                    <h1>A Front-End <br>Web Dev</h1>
-                    <div class="headerBtns">
-                        <a href="#projects"><button class='headerButton'>View My Works</button></a>
-                        <a href="#contact"><button class="headerClearBtn">Contact Me</button></a>
-                    </div>
-                    <div class="socialLinks">
-                        <ul>
-                            <li><a href="https://twitter.com/GregCrutchlow" target="_blank" rel="noopener noreferrer"><i
-                                    class="fa-brands fa-twitter"></i></a></li>
-                            <li><a href="https://linkedin.com/in/gregcrutchlow" target="_blank" rel="noopener noreferrer"><i
-                                    class="fa-brands fa-linkedin"></i></a></li>
-                            <li><a href="https://github.com/GregCrutchlow" target="_blank" rel="noopener noreferrer"><i
-                                    class="fa-brands fa-github"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="arrow bounce">
-                <i class="fa-solid fa-arrow-down fa-2x"></i>
-            </div>
-        </div> <!-- wrapper end-->
-    </header> <!-- Header end-->
-    <main id="mainContent">
-        <Section id="about" class="about"> <!-- About Section -->
-            <div class="wrapper">
-                <div class="aboutMeTitle">
-                    <h4 data-aos="fade-down" class="aboutTitle">About Me</h4>
-                    <h2>Get To Know Me</h2>
-                </div>
-                <div class="aboutMeContainer">
-                    <div class="aboutMeTalk">
-                        <h3 id="hi">Hi, I'm <span class="name">Greg Crutchlow</span></h3>
-                        <p>I'm a Front-End Web Developer with a passion for web development. I love creating elegant,
-                            clean and accessible websites for every user. I started my web development journey in
-                            photography but soon found my calling in creating websites.</p>
-                        <p>When I'm not coding, I spend my time with my family or doing a handful of hobbies that occupy
-                            my time, including but not limited to: anything mechanical keyboard related, Magic The
-                            Gathering, Leatherworking (beginner) and wood working.</p>
-                    </div>
-                    <div class="aboutMeGraphic">
-                        <img src="./assets/gregProfilePic02.webp" alt="Profile picture of Greg outdoors">
-                    </div>
-                </div>
-                <div class="aboutMeDetails">
-                    <div class="aboutName">
-                        <h5>Name:</h5>
-                        <p>Greg Crutchlow</p>
-                    </div>
-                    <div class="aboutEmail">
-                        <h5>Email:</h5>
-                        <p>gregcrutchlow@gmail.com</p>
-                    </div>
-                    <div class="aboutFrom">
-                        <h5>From:</h5>
-                        <p>Ottawa, Canada</p>
-                    </div>
-                </div>
-
-            </div>
-        </Section> <!-- End About Section -->
-        <Section id="skills" class="skills"> <!-- Tech Stack Section -->
-            <div class="wrapper">
-                <h4 data-aos="fade-down">My Skills</h4>
-                <h2>How I can help in your next project</h2>
-                <div>
-                    <ul class="techStack">
-                        <li data-aos="fade-down"><i class="fa-brands fa-html5" aria-hidden="true"></i>HTML 5</li>
-                        <li data-aos="fade-down"><i class="fa-brands fa-css3-alt" aria-hidden="true"></i>CSS 3</li>
-                        <li data-aos="fade-down"><i class="fa-brands fa-js" aria-hidden="true"></i>JS</li>
-                        <li data-aos="fade-down"><i class="fa-brands fa-sass" aria-hidden="true"></i>Sass</li>
-                        <li data-aos="fade-down"><i class="devicon-nodejs-plain"></i>Node JS</li>
-                        <li data-aos="fade-down"><i class="fa-brands fa-git-alt" aria-hidden="true"></i>Git</li>
-                        <li data-aos="fade-down"><i class="fa-brands fa-github" aria-hidden="true"></i>GitHub</li>
-                        <li data-aos="fade-down"><i class="fa-brands fa-react" aria-hidden="true"></i>React</li>
-                        <li data-aos="fade-down"><i class="fa-solid fa-server" aria-hidden="true"></i>REST API</li>
-                        <li data-aos="fade-down"><i class="fa-solid fa-pen-ruler" aria-hidden="true"></i>DRY Design</li>
-                        <li data-aos="fade-down"><i class="fa-solid fa-universal-access"></i>Accessibility</li>
-                        <li data-aos="fade-down"><i class="devicon-firebase-plain" aria-hidden="true"></i>Firebase</li>
-                        <li data-aos="fade-down"><i class="devicon-photoshop-plain" aria-hidden="true"></i>Photoshop
-                        </li>
-                        <li data-aos="fade-down"><i class="devicon-vscode-plain"></i>VS Code</li>
-                    </ul>
-                </div>
-            </div>
-        </Section> <!-- End Tech Stack -->
-        <Section id="projects" class="projects"> <!-- Projects Section -->
-            <div class="wrapper">
-                <h4 data-aos="fade-down">Projects</h4>
-                <div class="projectContainer">
-                    <article class="project6">
-                        <div class="projectImg">
-                            <a href="https://crutches-css.netlify.app" target="_blank" rel="noopener noreferrer"><img
-                                    src="./assets/crutches-css-library.png" alt="screenshot of Crutches CSS Library Website"></a>
-                        </div>
-                        <div class="projectDesc">
-                            <h3>Crutches CSS Library</h3>
-                            <p>Built using Sass to create a CSS library based on Tailwind CSS and Bootstrap, its a class based css library to completely style your website only using classes in html and rarely, if ever, touching the css directly. Still a work in progress with a sample site coming soon.</p>
-                            <div class="skillsUsed">
-                                <ul>
-                                    <li><i class="fa-brands fa-sass" aria-hidden="true"></i></li>
-                                    <li><i class="fa-brands fa-css3-alt" aria-hidden="true"></i></li>
-                                    <li><i class="fa-brands fa-html5" aria-hidden="true"></i></li>
-                                </ul>
-                                <ul class="projectBtn">
-                                    <li><a href="https://crutches-css.netlify.app" target="_blank"
-                                            rel="noopener noreferrer"><button>Live Site</button></a></li>
-                                    <li><a href="https://github.com/GregCrutchlow/Crutches-CSS-Libary" target="_blank"
-                                            rel="noopener noreferrer"><button>Github</button></a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </article>
-                    <article class="project7">
-                        <div class="projectImg">
-                            <a href="https://gregcrutchlow-gpt-3-mockup.netlify.app" target="_blank" rel="noopener noreferrer"><img
-                                    src="./assets/gpt3-mockup.png" alt="screenshot of GPT-3 Mockup Site"></a>
-                        </div>
-                        <div class="projectDesc">
-                            <h3>GPT-3 Mockup Site</h3>
-                            <p>Built using React and CSS, built to show skills with React and design for websites. Tried new techniques to build the site and compartmentalize aspects of the site building process. This is strictly a mockup, a non-functioning site.</p>
-                            <div class="skillsUsed">
-                                <ul>
-                                    <li><i class="fa-brands fa-react" aria-hidden="true"></i></li>
-                                    <li><i class="fa-brands fa-css3-alt" aria-hidden="true"></i></li>
-                                    <li><i class="fa-brands fa-js" aria-hidden="true"></i></li>
-                                </ul>
-                                <ul class="projectBtn">
-                                    <li><a href="https://gregcrutchlow-gpt-3-mockup.netlify.app" target="_blank"
-                                            rel="noopener noreferrer"><button>Live Site</button></a></li>
-                                    <li><a href="https://github.com/GregCrutchlow/youtube-course" target="_blank"
-                                            rel="noopener noreferrer"><button>Github</button></a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </article>
-                    <article class="project6" >
-                        <div class="projectImg">
-                            <a href="https://pig-game-gc-dev.netlify.app" target="_blank" rel="noopener noreferrer"><img
-                                    src="./assets/pig-game.png" alt="screenshot of Pig-game website"></a>
-                        </div>
-                        <div class="projectDesc">
-                            <h3>Pig Game</h3>
-                            <p>Built using vanilla JavaScript, Pig is a dice rolling game where the goal is to bank 100 points before your opponent. Players can score big but lose even bigger in this game of risk/reward. Built using simple JavaScript for game functionality.</p>
-                            <div class="skillsUsed">
-                                <ul>
-                                    <li><i class="fa-brands fa-html5" aria-hidden="true"></i></li>
-                                    <li><i class="fa-brands fa-css3-alt" aria-hidden="true"></i></li>
-                                    <li><i class="fa-brands fa-js" aria-hidden="true"></i></li>
-                                </ul>
-                                <ul class="projectBtn">
-                                    <li><a href="https://pig-game-gc-dev.netlify.app" target="_blank"
-                                            rel="noopener noreferrer"><button>Live Site</button></a></li>
-                                    <li><a href="https://github.com/GregCrutchlow/pig-game" target="_blank"
-                                            rel="noopener noreferrer"><button>Github</button></a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </article>
-                    <article class="project5" >
-                        <div class="projectImg">
-                            <a href="https://guess-my-number-game-dev.netlify.app" target="_blank" rel="noopener noreferrer"><img
-                                    src="./assets/guess-my-number-game-dev.png" alt="screenshot of Guess My Number game website"></a>
-                        </div>
-                        <div class="projectDesc">
-                            <h3>Guess My Number</h3>
-                            <p>Built using vanilla JavaScript, Guess My Number is a number guessing game between 1-20. Simple code to test my skills manipulating the DOM as well as some game coding and error handling skills.</p>
-                            <div class="skillsUsed">
-                                <ul>
-                                    <li><i class="fa-brands fa-html5" aria-hidden="true"></i></li>
-                                    <li><i class="fa-brands fa-css3-alt" aria-hidden="true"></i></li>
-                                    <li><i class="fa-brands fa-js" aria-hidden="true"></i></li>
-                                </ul>
-                                <ul class="projectBtn">
-                                    <li><a href="https://guess-my-number-game-dev.netlify.app" target="_blank"
-                                            rel="noopener noreferrer"><button>Live Site</button></a></li>
-                                    <li><a href="https://github.com/GregCrutchlow/Guess-My-Number" target="_blank"
-                                            rel="noopener noreferrer"><button>Github</button></a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </article>
-                    <article class="project4">
-                        <div class="projectImg">
-                            <a href="https://isthebookbetter44.netlify.app/" target="_blank"
-                                rel="noopener noreferrer"><img src="./assets/isthebookbetter44.png"
-                                    alt="screenshot of Is The Book Better website"></a>
-                        </div>
-                        <div class="projectDesc">
-                            <h3>Is The Book Better</h3>
-                            <p>Built during bootcamp at Juno College cohort 44. Group project with other members Paco,
-                                Louis and Matt.
-                                Compare a book and its movie and find out which one you should spend your time on!</p>
-                            <div class="skillsUsed">
-                                <ul>
-                                    <li><i class="devicon-react-original" aria-hidden="true"></i></li>
-                                    <li><i class="devicon-nodejs-plain" aria-hidden="true"></i></li>
-                                    <li><i class="devicon-sass-original" aria-hidden="true"></i></li>
-                                    <li><i class="fa-brands fa-js" aria-hidden="true"></i></li>
-                                    <li><i class="fa-solid fa-people-group" aria-hidden="true"></i></li>
-                                </ul>
-                                <ul class="projectBtn">
-                                    <li><a href="https://isthebookbetter44.netlify.app" target="_blank"
-                                            rel="noopener noreferrer"><button>Live Site</button></a></li>
-                                    <li><a href="https://github.com/GregCrutchlow/Book-Better-GC"
-                                            target="_blank" rel="noopener noreferrer"><button>Github</button></a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article class="project1">
-                        <div class="projectImg">
-                            <a href="https://tasty44.netlify.app" target="_blank" rel="noopener noreferrer"><img
-                                    src="./assets/tasty44.png" alt="screenshot of Tasty website made by Greg"></a>
-                        </div>
-                        <div class="projectDesc">
-                            <h3>The Tasty Website</h3>
-                            <p>Built during bootcamp at Juno College cohort 44. First project building a website. Built
-                                to learn and test skills pertaining to HTML, CSS as well as Accessibility and ease of
-                                use for the user.</p>
-                            <div class="skillsUsed">
-                                <ul>
-                                    <li><i class="devicon-html5-plain" aria-hidden="true"></i></li>
-                                    <li><i class="devicon-css3-plain" aria-hidden="true"></i></li>
-                                    <li><i class="fa-brands fa-js" aria-hidden="true"></i></li>
-                                    <li><i class="fa-solid fa-universal-access" aria-hidden="true"></i></li>
-                                </ul>
-                                <ul class="projectBtn">
-                                    <li><a href="https://tasty44.netlify.app" target="_blank"
-                                            rel="noopener noreferrer"><button>Live Site</button></a></li>
-                                    <li><a href="https://github.com/GregCrutchlow/gregCrutchlowAssignmentOne"
-                                            target="_blank" rel="noopener noreferrer"><button>Github</button></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </article>
-                </div>
-            </div>
-        </Section> <!-- End Projects Section -->
-        <Section id="contact" class="contact"> <!-- Contact Section -->
-            <div class="wrapper">
-                <div class="contactDetails">
-                    <h3>Let's get in touch</h3>
-                    <p>I enjoy talking about new ideas and challenges. Please give as many details as possible for our
-                        first meet-up.</p>
-                    <h4>Living In:</h4>
-                    <p>Orleans, Ottawa, Canada</p>
-                    <h4>Email:</h4>
-                    <p>gregcrutchlow@gmail.com</p>
-                    <div>
-                        <ul class="contactSocial">
-                            <li><a href="https://twitter.com/GregCrutchlow" target="_blank" rel="noopener noreferrer"><i
-                                        class="fa-brands fa-twitter"></i></a></li>
-                            <li><a href="https://linkedin.com/in/gregcrutchlow" target="_blank"
-                                    rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i></a></li>
-                            <li><a href="https://github.com/GregCrutchlow" target="_blank" rel="noopener noreferrer"><i
-                                        class="fa-brands fa-github"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="contactFormContainer">
-                    <h3>Lets Chat!</h3>
-                    <form action="https://formsubmit.co/gregcrutchlow@gmail.com" method="POST" class="contactForm">
-                        <label for="name">What is Your Name</label><input type="text" name="name" required>
-                        <label for="email">Your Email Address</label><input type="email" name="email" required>
-                        <label for="message">How can I Help You?</label><textarea name="message" id="message" rows="10"
-                            required></textarea>
-                        <button type="submit" class="btn submitBtn">Send</button>
-                    </form>
-                </div>
-            </div>
-        </Section>
-        <!-- End Contact Section -->
-        
-    </main>
-    <footer>
-        <div class="backToTop">
-            <button class="backUp" onclick="window.location.href='#';">Back To Top</button>
-        </div>
-        <div class="wrapper">
-            <h5 class="copyright">Copyright © 2022 Greg Crutchlow. All Rights Reserved</h5>
-        </div> <!-- wrapper end -->
-    </footer>
-    <div class="modal hidden">
-        <button class="close-modal">&times;</button>
-        <h3>Lets Chat!</h3>
-        <p>Click here to reach out so we can chat about some cool projects we could build together!</p>
-        <button class="btnContact"><a href="#contact">Contact Me</a></button>
-    </div>
-    <div class="overlay hidden"></div>
-    <!-- AOS script link -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>AOS.init();</script>
-
-    <!-- JS link -->
-    <script src="./app.js"></script>
-</body>
-
+		<!-- JS link -->
+		<script src="./app.js"></script>
+	</body>
 </html>
 
 <!-- This is a test of the git push -->
