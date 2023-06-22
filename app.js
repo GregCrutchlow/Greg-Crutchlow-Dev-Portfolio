@@ -55,20 +55,6 @@ portfolio.hamburgerMenu = () => {
     })
 }
 
-
-// portfolio.profilePic = () => {
-//     const profile = document.querySelector(".headerProfilePic")
-
-// simple easter egg to spin header profil picture
-// portfolio.profilePic = () => {
-//    const profile = document.querySelector(".headerProfilePic")
-
-
-//     profile.addEventListener("click", () => {
-//         profile.classList.toggle("egg")
-//     })
-// }
-
 // dark mode toggle, need to refine
 portfolio.darkMode = () => {
     // const detect = window.matchMedia("(prefers-color-scheme: dark)")
